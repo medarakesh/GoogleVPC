@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDffb01d5c23e3c890c65ef379c64699ef</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b3dc5f7adbdbc4901c7b50d3e29619c4</scope_name>
+        <serialized_content>{"FlowDesigner:FDffb01d5c23e3c890c65ef379c64699ef":{},"FlowDesigner:FDffb01d5c23e3c890c65ef379c64699ef.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"1edf12df-d1fb-42e5-9e37-2888527453fd\",\"default_value\":\"\",\"label\":\"Subnetwork\",\"mandatory\":\"false\",\"uiUniqueId\":\"4227cc38-8e7f-4c95-ae61-8cc36f06f105\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDffb01d5c23e3c890c65ef379c64699ef\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"f60ae047-a339-407d-aa4e-12f1141a9e98\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-10 11:09:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3b01d5cdbe3c8901c7b50d3e29619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDffb01d5c23e3c890c65ef379c64699ef</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_complex_object_b3b01d5cdbe3c8901c7b50d3e29619f0</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-10 11:09:29</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <complex_definition>FD1e3e6eb8e5e7c81021b539e84b1cd91e</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-12 07:21:08</sys_created_on>
+        <sys_id>1eafea3c1be7c8101f8cb844cc4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Firewall</sys_name>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_1eafea3c1be7c8101f8cb844cc4bcb73</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 07:21:08</sys_updated_on>
+        <template_label>Firewall</template_label>
+        <template_name>firewall</template_name>
+    </sys_hub_flow_designer_co_template>
+</record_update>

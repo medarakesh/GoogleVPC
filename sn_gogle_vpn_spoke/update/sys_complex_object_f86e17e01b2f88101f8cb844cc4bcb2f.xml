@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD386e17e0fb2f8810d864b3e512684c2f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b3dc5f7adbdbc4901c7b50d3e29619c4</scope_name>
+        <serialized_content>{"FlowDesigner:FD386e17e0fb2f8810d864b3e512684c2f":{"ServiceAccounts":["Any"],"ServiceAccounts.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Service Accounts\",\"mandatory\":\"false\",\"child_name\":\"ServiceAccount\",\"uiTypeLabel\":\"Any\",\"child_label\":\"Service Account\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"d02573a7-9900-4ed8-b886-1cc589808103\"}"},"destinationRanges":["Any"],"destinationRanges.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Destination Ranges\",\"mandatory\":\"false\",\"child_name\":\"destinationRange\",\"uiTypeLabel\":\"Any\",\"child_label\":\"Destination Range\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"1737eb23-2e4b-4936-bad9-91e9f0c7d7c1\"}"},"targetTags":["Any"],"targetTags.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Target Tags\",\"mandatory\":\"false\",\"child_name\":\"targetTag\",\"uiTypeLabel\":\"Any\",\"child_label\":\"Target Tag\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"01ff1768-fc49-484e-8c42-6c5639e8f815\"}"},"denied":["Any"],"denied.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Denied\",\"mandatory\":\"false\",\"child_name\":\"Denied_child0\",\"uiTypeLabel\":\"Any\",\"child_type_label\":\"Object\",\"child_label\":\"Denied_child0\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"b7511fb9-7c69-44d4-b877-4ba767c03cfa\"}"}},"FlowDesigner:FD386e17e0fb2f8810d864b3e512684c2f.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD386e17e0fb2f8810d864b3e512684c2f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Target Properties\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"65000\",\"uiUniqueId\":\"f4da9db5-697e-48a5-9b3f-7251c11a8c7f\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-11 16:06:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f86e17e01b2f88101f8cb844cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD386e17e0fb2f8810d864b3e512684c2f</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_complex_object_f86e17e01b2f88101f8cb844cc4bcb2f</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-11 16:06:48</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_gogle_vpn_spoke.GoogleVPCErrorHandler</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GoogleVPCErrorHandler</name>
+        <script><![CDATA[var GoogleVPCErrorHandler = Class.create();
+GoogleVPCErrorHandler.prototype = {
+    initialize: function() {},
+    getGenericError: function(key) {
+        var errorMessage = {
+            "authError": "Invalid authorization header. The access token you're using is either expired or invalid.",
+            "notFound": "Invalid Project ID has been passed."
+        };
+
+        return errorMessage[key];
+
+    },
+    errorMessageHandling: function(inputs, outputs) {
+        var errorResponse = JSON.parse(inputs.responseBody);
+        outputs.errormessage = this.getGenericError(errorResponse.error.errors[0]["reason"]);
+
+        if (!outputs.errormessage)
+            outputs.errormessage = errorResponse.error.message;
+        return outputs.errormessage;
+    },
+    networkErrorMessage: function(inputs, outputs) {
+        var errorResponse = JSON.parse(inputs.responseBody);
+        outputs.errormessage = this.getGenericError(errorResponse.error.errors[0]["reason"]);
+        var errorMessage = errorResponse.error.message;
+        var errorCode = errorResponse.error.code;
+        if (errorCode == 409 && errorMessage.indexOf('already exists') != -1)
+            outputs.errormessage = "Requested network name is already created.";
+        else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1)
+            outputs.errormessage = "Requested network is doesn't exist.";
+        else if (!outputs.errormessage)
+            outputs.errormessage = errorMessage;
+
+        return outputs.errormessage;
+
+    },
+    subnetworkErrorMessage: function(inputs, outputs) {
+        var errorResponse = JSON.parse(inputs.responseBody);
+        outputs.errormessage = this.getGenericError(errorResponse.error.errors[0]["reason"]);
+        var errorMessage = errorResponse.error.message;
+        var errorCode = errorResponse.error.code;
+        if (errorCode == 409 && errorMessage.indexOf('already exists') != -1)
+            outputs.errormessage = "Requested subnetwork name is already created.";
+        else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1 && errorMessage.indexOf('subnetwork') != -1)
+            outputs.errormessage = "Requested subnetwork is doesn't exist.";
+        else if (errorCode == 400 && (errorMessage.indexOf('Must be a CIDR address range') != -1 || errorMessage.indexOf("Required field 'ipCidrRange' not specified") != -1))
+            outputs.errormessage = "Invalid IP CIDR address range has been passed.";
+        else if (errorCode == 400 && errorMessage.indexOf('conflicts with existing subnetwork') != -1)
+            outputs.errormessage = "Subnetwork is already existed with same ipcidr range.";
+        else if (errorCode == 400 && errorMessage.indexOf('A VPC Network instead of Legacy Network') != -1)
+            outputs.errormessage = "Subnetwork must be created under vpc network instead of legacy network.";
+        else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1 && errorMessage.indexOf('global/networks') != -1)
+            outputs.errormessage = "Requested network is doesn't exist.";
+        else if (!outputs.errormessage)
+            outputs.errormessage = errorMessage;
+
+        return outputs.errormessage;
+
+    },
+    firewallErrorMessage: function(inputs, outputs) {
+        var errorResponse = JSON.parse(inputs.responseBody);
+        outputs.errormessage = this.getGenericError(errorResponse.error.errors[0]["reason"]);
+        var errorMessage = errorResponse.error.message;
+        var errorCode = errorResponse.error.code;
+        if (errorCode == 409 && errorMessage.indexOf('already exists') != -1)
+            outputs.errormessage = "Requested firewall name is already created.";
+        else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1 && errorMessage.indexOf('global/networks') != -1)
+            outputs.errormessage = "Requested network is doesn't exist.";
+        else if (errorCode == 400 && errorMessage.indexOf('Invalid IP protocol specification') != -1)
+            outputs.errormessage = "Invalid IP protocol specification has been passed.";
+		else if (errorCode == 400 && errorMessage.indexOf('Invalid port range specification') != -1)
+            outputs.errormessage = "Invalid port range specification has been passed.";
+		else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
+            outputs.errormessage = "Service accounts must be valid RFC 822 email addresses.";
+		else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
+            outputs.errormessage = "Service accounts must be valid RFC 822 email addresses.";
+        else if (!outputs.errormessage)
+            outputs.errormessage = errorMessage;
+
+        return outputs.errormessage;
+
+    },
+
+    type: 'GoogleVPCErrorHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-10 06:13:46</sys_created_on>
+        <sys_id>d4ac88d4db23c8901c7b50d3e29619c5</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>GoogleVPCErrorHandler</sys_name>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_script_include_d4ac88d4db23c8901c7b50d3e29619c5</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 08:57:18</sys_updated_on>
+    </sys_script_include>
+</record_update>

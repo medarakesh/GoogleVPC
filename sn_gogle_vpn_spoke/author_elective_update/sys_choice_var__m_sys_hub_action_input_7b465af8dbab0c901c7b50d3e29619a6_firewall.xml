@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="firewall" table="var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>0</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:38:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50289e3cdbab0c901c7b50d3e29619d7</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEFAULT-ALLOW-HTTP</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>1</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e69927cdbab0c901c7b50d3e2961908</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>default-allow-http</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEFAULT-ALLOW-HTTPS</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>2</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca69927cdbab0c901c7b50d3e2961909</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>default-allow-https</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEFAULT-ALLOW-ICMP</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>3</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8669927cdbab0c901c7b50d3e296190a</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>default-allow-icmp</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEFAULT-ALLOW-INTERNAL</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>4</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4269927cdbab0c901c7b50d3e296190b</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>default-allow-internal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEFAULT-ALLOW-RDP</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>5</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e69927cdbab0c901c7b50d3e296190b</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>default-allow-rdp</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DEFAULT-ALLOW-SSH</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>6</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c669927cdbab0c901c7b50d3e296190c</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>default-allow-ssh</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NEWFIREWALL</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>7</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8269927cdbab0c901c7b50d3e296190d</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>newfirewall</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PAYLOADTEST</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>8</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e69927cdbab0c901c7b50d3e296190d</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>payloadtest</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TESTNETWORK-ALLOW-ICMP</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>9</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a691e7cdbab0c901c7b50d3e29619f0</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>testnetwork-allow-icmp</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TESTNETWORK-ALLOW-INTERNAL</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>10</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2691e7cdbab0c901c7b50d3e29619f1</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>testnetwork-allow-internal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TESTNETWORK-ALLOW-RDP</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>11</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e691e7cdbab0c901c7b50d3e29619f1</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>testnetwork-allow-rdp</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>firewall</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TESTNETWORK-ALLOW-SSH</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sequence>12</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a691e7cdbab0c901c7b50d3e29619f2</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 10:47:59</sys_updated_on>
+            <value>testnetwork-allow-ssh</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>firewall</element>
+            <name>var__m_sys_hub_action_input_7b465af8dbab0c901c7b50d3e29619a6</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-12 05:43:55</sys_created_on>
+            <sys_id>8669927cdbab0c901c7b50d3e2961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-12 05:43:55</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Metadata Retrieval Management">579fc91cdbe3c8901c7b50d3e29619be</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;Retrieves a list of networks available to the specified project.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Networks&lt;/b&gt; - JSON  object contains networks Label and Name.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Virtual Private Network, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid Project ID has been passed.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Virtual Private Cloud connection and credential must be created and associated with the Google Virtual Private Cloud Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <ih_action>false</ih_action>
+        <internal_name>list_networks</internal_name>
+        <label_cache>[{"name":"{{action.project}}","label":"action➛Project","type":"action","ref":""},{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{step[e020d63c-0b77-480e-9e36-075ba1b6afab].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[e020d63c-0b77-480e-9e36-075ba1b6afab].project_id}}","label":"step➛Pre Processing➛project_ID","type":"step","ref":""},{"name":"{{step[5a1b2772-9177-40e0-9f99-89899095aa47].variable}}","label":"step➛Prepare Networks➛variable","type":"step","ref":""},{"name":"{{step[5a1b2772-9177-40e0-9f99-89899095aa47].networks}}","label":"step➛Prepare Networks➛Networks","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>511c8e341b67c8101f8cb844cc4bcb97</latest_snapshot>
+        <master_snapshot>fa25b000db2b88901c7b50d3e296199d</master_snapshot>
+        <name>List Networks</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 12:24:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1848504cdba788901c7b50d3e2961909</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>List Networks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_1848504cdba788901c7b50d3e2961909</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:43</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=1848504cdba788901c7b50d3e2961909"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1848504cdba788901c7b50d3e2961909"/>
+    <sys_element_mapping action="delete_multiple" query="id=1848504cdba788901c7b50d3e2961909"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>1848504cdba788901c7b50d3e2961909</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:04</sys_created_on>
+        <sys_id>f2947cccdbe788901c7b50d3e2961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:04</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1848504cdba788901c7b50d3e2961909</table>
+        <value>{{step[5a1b2772-9177-40e0-9f99-89899095aa47].networks}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=1848504cdba788901c7b50d3e2961909^sys_idNOT IN4694b8ccdbe788901c7b50d3e29619d6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="List Networks">1848504cdba788901c7b50d3e2961909</action>
+        <cid>5a1b2772-9177-40e0-9f99-89899095aa47</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Networks</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>4694b8ccdbe788901c7b50d3e29619d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:36</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4694b8ccdbe788901c7b50d3e29619d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4694b8ccdbe788901c7b50d3e29619d6</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>52943cccdbe788901c7b50d3e29619e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:36</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    var stream = sn_fd.FlowAPI.executeDataStreamAction('sn_gogle_vpn_spoke.fetch_networks', {
+        "project_id": inputs.projectid
+    });
+    var obj = []
+    while (stream.hasNext()) {
+        obj.push(stream.next())
+    }
+    var networks = [];
+    obj.forEach(function(networkObj) {
+        networks.push({
+            "label": networkObj.name.toUpperCase(),
+            "name": networkObj.name
+        });
+    })
+    outputs.networks = {
+        data: networks
+    }
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4694b8ccdbe788901c7b50d3e29619d6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>9e943cccdbe788901c7b50d3e29619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4694b8ccdbe788901c7b50d3e29619d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>4694b8ccdbe788901c7b50d3e29619d6</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>5a943cccdbe788901c7b50d3e29619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projectid</field>
+        <id>4694b8ccdbe788901c7b50d3e29619d6</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>da943cccdbe788901c7b50d3e29619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_4694b8ccdbe788901c7b50d3e29619d6</table>
+        <value>{{action.project_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>4694b8ccdbe788901c7b50d3e29619d6</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>1e943cccdbe788901c7b50d3e29619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=4694b8ccdbe788901c7b50d3e29619d6^sys_idNOT IN0694b8ccdbe788901c7b50d3e29619da"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Prepare Networks">4694b8ccdbe788901c7b50d3e29619d6</model>
+        <model_id>4694b8ccdbe788901c7b50d3e29619d6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_4694b8ccdbe788901c7b50d3e29619d6</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>0694b8ccdbe788901c7b50d3e29619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=4694b8ccdbe788901c7b50d3e29619d6^sys_idNOT IN06943cccdbe788901c7b50d3e29619dd"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=a66fcd42-e6ca-4867-b3b2-a4eb84fbd587</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>networks</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Networks</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Networks">4694b8ccdbe788901c7b50d3e29619d6</model>
+        <model_id>4694b8ccdbe788901c7b50d3e29619d6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_4694b8ccdbe788901c7b50d3e29619d6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>06943cccdbe788901c7b50d3e29619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=1848504cdba788901c7b50d3e2961909^sys_idNOT IN8f0ad08cdba788901c7b50d3e2961907"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=48a177eb-d94b-4367-b5e3-5e03eec1a59a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>project_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Project ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Networks">1848504cdba788901c7b50d3e2961909</model>
+        <model_id>1848504cdba788901c7b50d3e2961909</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1848504cdba788901c7b50d3e2961909</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 12:32:01</sys_created_on>
+        <sys_id>8f0ad08cdba788901c7b50d3e2961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 12:32:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=1848504cdba788901c7b50d3e2961909^sys_idNOT IN7e947cccdbe788901c7b50d3e296190e"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=9e90e93a-5fc3-4a77-9891-ddfc5fe20efe</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>output</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="List Networks">1848504cdba788901c7b50d3e2961909</model>
+        <model_id>1848504cdba788901c7b50d3e2961909</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1848504cdba788901c7b50d3e2961909</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:04</sys_created_on>
+        <sys_id>7e947cccdbe788901c7b50d3e296190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=1848504cdba788901c7b50d3e2961909^sys_idNOT IN4694b8ccdbe788901c7b50d3e29619d6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="List Networks">1848504cdba788901c7b50d3e2961909</action>
+        <cid>5a1b2772-9177-40e0-9f99-89899095aa47</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Networks</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>4694b8ccdbe788901c7b50d3e29619d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:36</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4694b8ccdbe788901c7b50d3e29619d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4694b8ccdbe788901c7b50d3e29619d6</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>52943cccdbe788901c7b50d3e29619e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:36</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    var stream = sn_fd.FlowAPI.executeDataStreamAction('sn_gogle_vpn_spoke.fetch_networks', {
+        "project_id": inputs.projectid
+    });
+    var obj = []
+    while (stream.hasNext()) {
+        obj.push(stream.next())
+    }
+    var networks = [];
+    obj.forEach(function(networkObj) {
+        networks.push({
+            "label": networkObj.name.toUpperCase(),
+            "name": networkObj.name
+        });
+    })
+    outputs.networks = {
+        data: networks
+    }
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4694b8ccdbe788901c7b50d3e29619d6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>9e943cccdbe788901c7b50d3e29619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4694b8ccdbe788901c7b50d3e29619d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>4694b8ccdbe788901c7b50d3e29619d6</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>5a943cccdbe788901c7b50d3e29619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projectid</field>
+        <id>4694b8ccdbe788901c7b50d3e29619d6</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>da943cccdbe788901c7b50d3e29619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_4694b8ccdbe788901c7b50d3e29619d6</table>
+        <value>{{action.project_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>4694b8ccdbe788901c7b50d3e29619d6</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>1e943cccdbe788901c7b50d3e29619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=4694b8ccdbe788901c7b50d3e29619d6^sys_idNOT IN0694b8ccdbe788901c7b50d3e29619da"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Prepare Networks">4694b8ccdbe788901c7b50d3e29619d6</model>
+        <model_id>4694b8ccdbe788901c7b50d3e29619d6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_4694b8ccdbe788901c7b50d3e29619d6</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>0694b8ccdbe788901c7b50d3e29619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=4694b8ccdbe788901c7b50d3e29619d6^sys_idNOT IN06943cccdbe788901c7b50d3e29619dd"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=a66fcd42-e6ca-4867-b3b2-a4eb84fbd587</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>networks</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Networks</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Networks">4694b8ccdbe788901c7b50d3e29619d6</model>
+        <model_id>4694b8ccdbe788901c7b50d3e29619d6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_4694b8ccdbe788901c7b50d3e29619d6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:01</sys_created_on>
+        <sys_id>06943cccdbe788901c7b50d3e29619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1848504cdba788901c7b50d3e2961909^sys_idNOT IN4f0ad08cdba788901c7b50d3e296190c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>project_id</element>
+        <help/>
+        <hint/>
+        <label>Project ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1848504cdba788901c7b50d3e2961909</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 12:32:01</sys_created_on>
+        <sys_id>4f0ad08cdba788901c7b50d3e296190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 12:32:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_1848504cdba788901c7b50d3e2961909^sys_idNOT INba947cccdbe788901c7b50d3e2961913"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1848504cdba788901c7b50d3e2961909</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:28:04</sys_created_on>
+        <sys_id>ba947cccdbe788901c7b50d3e2961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:28:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=1848504cdba788901c7b50d3e2961909^sys_idNOT IN1b25f000db2b88901c7b50d3e2961900"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="List Networks">1848504cdba788901c7b50d3e2961909</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1b25f000db2b88901c7b50d3e2961900","name":"plan"}}</plan>
+        <snapshot>511c8e341b67c8101f8cb844cc4bcb97</snapshot>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1b25f000db2b88901c7b50d3e2961900</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:43</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Metadata Retrieval Management">579fc91cdbe3c8901c7b50d3e29619be</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;Retrieves a list of networks available to the specified project.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Project ID&lt;/b&gt; - Unique ID of the project.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Networks&lt;/b&gt; - JSON  object contains networks Label and Name.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Virtual Private Network, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid Project ID has been passed.&lt;/li&gt;
+&lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+
+&lt;p&gt; To use this action, a corresponding Google Virtual Private Cloud connection and credential must be created and associated with the Google Virtual Private Cloud Connection &amp; Credential alias.  &lt;a target="_blank" href="https://docs.servicenow.com/search?q=Create+a+Connection+%26+Credential+alias"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>list_networks</internal_name>
+        <label_cache>[{"name":"{{action.project}}","label":"action➛Project","type":"action","ref":""},{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{step[e020d63c-0b77-480e-9e36-075ba1b6afab].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[e020d63c-0b77-480e-9e36-075ba1b6afab].project_id}}","label":"step➛Pre Processing➛project_ID","type":"step","ref":""},{"name":"{{step[5a1b2772-9177-40e0-9f99-89899095aa47].variable}}","label":"step➛Prepare Networks➛variable","type":"step","ref":""},{"name":"{{step[5a1b2772-9177-40e0-9f99-89899095aa47].networks}}","label":"step➛Prepare Networks➛Networks","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>List Networks</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="List Networks">1848504cdba788901c7b50d3e2961909</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fa25b000db2b88901c7b50d3e296199d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-10 11:13:47</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fa25b000db2b88901c7b50d3e296199d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fa25b000db2b88901c7b50d3e296199d"/>
+    <sys_element_mapping action="delete_multiple" query="id=fa25b000db2b88901c7b50d3e296199d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output</field>
+        <id>fa25b000db2b88901c7b50d3e296199d</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>4725b000db2b88901c7b50d3e29619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fa25b000db2b88901c7b50d3e296199d</table>
+        <value>{{step[5a1b2772-9177-40e0-9f99-89899095aa47].networks}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=fa25b000db2b88901c7b50d3e296199d^sys_idNOT IN8b25b000db2b88901c7b50d3e29619a5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="List Networks">fa25b000db2b88901c7b50d3e296199d</action>
+        <cid>5a1b2772-9177-40e0-9f99-89899095aa47</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Networks</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8b25b000db2b88901c7b50d3e29619a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8b25b000db2b88901c7b50d3e29619a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8b25b000db2b88901c7b50d3e29619a5</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8b25b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:42</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    var stream = sn_fd.FlowAPI.executeDataStreamAction('sn_gogle_vpn_spoke.fetch_networks', {
+        "project_id": inputs.projectid
+    });
+    var obj = []
+    while (stream.hasNext()) {
+        obj.push(stream.next())
+    }
+    var networks = [];
+    obj.forEach(function(networkObj) {
+        networks.push({
+            "label": networkObj.name.toUpperCase(),
+            "name": networkObj.name
+        });
+    })
+    outputs.networks = {
+        data: networks
+    }
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8b25b000db2b88901c7b50d3e29619a5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>c725b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8b25b000db2b88901c7b50d3e29619a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8b25b000db2b88901c7b50d3e29619a5</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8325b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projectid</field>
+        <id>8b25b000db2b88901c7b50d3e29619a5</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>0725b000db2b88901c7b50d3e29619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8b25b000db2b88901c7b50d3e29619a5</table>
+        <value>{{action.project_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8b25b000db2b88901c7b50d3e29619a5</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>4725b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8b25b000db2b88901c7b50d3e29619a5^sys_idNOT IN8725b000db2b88901c7b50d3e29619a8"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>projectid</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Prepare Networks">8b25b000db2b88901c7b50d3e29619a5</model>
+        <model_id>8b25b000db2b88901c7b50d3e29619a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8b25b000db2b88901c7b50d3e29619a5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8725b000db2b88901c7b50d3e29619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8b25b000db2b88901c7b50d3e29619a5^sys_idNOT IN8f25b000db2b88901c7b50d3e29619ae"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=a66fcd42-e6ca-4867-b3b2-a4eb84fbd587</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>networks</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Networks</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Networks">8b25b000db2b88901c7b50d3e29619a5</model>
+        <model_id>8b25b000db2b88901c7b50d3e29619a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8b25b000db2b88901c7b50d3e29619a5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8f25b000db2b88901c7b50d3e29619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=fa25b000db2b88901c7b50d3e296199d^sys_idNOT IN8b25b000db2b88901c7b50d3e296199e"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=48a177eb-d94b-4367-b5e3-5e03eec1a59a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>project_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Project ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Networks">fa25b000db2b88901c7b50d3e296199d</model>
+        <model_id>fa25b000db2b88901c7b50d3e296199d</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_fa25b000db2b88901c7b50d3e296199d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8b25b000db2b88901c7b50d3e296199e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=fa25b000db2b88901c7b50d3e296199d^sys_idNOT IN8f25b000db2b88901c7b50d3e29619ba"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=9e90e93a-5fc3-4a77-9891-ddfc5fe20efe</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>output</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="List Networks">fa25b000db2b88901c7b50d3e296199d</model>
+        <model_id>fa25b000db2b88901c7b50d3e296199d</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_fa25b000db2b88901c7b50d3e296199d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8f25b000db2b88901c7b50d3e29619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=fa25b000db2b88901c7b50d3e296199d^sys_idNOT IN8b25b000db2b88901c7b50d3e29619a5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="List Networks">fa25b000db2b88901c7b50d3e296199d</action>
+        <cid>5a1b2772-9177-40e0-9f99-89899095aa47</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Prepare Networks</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8b25b000db2b88901c7b50d3e29619a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8b25b000db2b88901c7b50d3e29619a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8b25b000db2b88901c7b50d3e29619a5</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8b25b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 04:45:42</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    var stream = sn_fd.FlowAPI.executeDataStreamAction('sn_gogle_vpn_spoke.fetch_networks', {
+        "project_id": inputs.projectid
+    });
+    var obj = []
+    while (stream.hasNext()) {
+        obj.push(stream.next())
+    }
+    var networks = [];
+    obj.forEach(function(networkObj) {
+        networks.push({
+            "label": networkObj.name.toUpperCase(),
+            "name": networkObj.name
+        });
+    })
+    outputs.networks = {
+        data: networks
+    }
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8b25b000db2b88901c7b50d3e29619a5</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>c725b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8b25b000db2b88901c7b50d3e29619a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8b25b000db2b88901c7b50d3e29619a5</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8325b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projectid</field>
+        <id>8b25b000db2b88901c7b50d3e29619a5</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>0725b000db2b88901c7b50d3e29619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8b25b000db2b88901c7b50d3e29619a5</table>
+        <value>{{action.project_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8b25b000db2b88901c7b50d3e29619a5</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>4725b000db2b88901c7b50d3e29619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8b25b000db2b88901c7b50d3e29619a5^sys_idNOT IN8725b000db2b88901c7b50d3e29619a8"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>projectid</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Prepare Networks">8b25b000db2b88901c7b50d3e29619a5</model>
+        <model_id>8b25b000db2b88901c7b50d3e29619a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8b25b000db2b88901c7b50d3e29619a5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8725b000db2b88901c7b50d3e29619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8b25b000db2b88901c7b50d3e29619a5^sys_idNOT IN8f25b000db2b88901c7b50d3e29619ae"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=a66fcd42-e6ca-4867-b3b2-a4eb84fbd587</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>networks</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Networks</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Prepare Networks">8b25b000db2b88901c7b50d3e29619a5</model>
+        <model_id>8b25b000db2b88901c7b50d3e29619a5</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8b25b000db2b88901c7b50d3e29619a5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>8f25b000db2b88901c7b50d3e29619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fa25b000db2b88901c7b50d3e296199d^sys_idNOT IN4b25b000db2b88901c7b50d3e29619a3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>project_id</element>
+        <help/>
+        <hint/>
+        <label>Project ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_fa25b000db2b88901c7b50d3e296199d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>4b25b000db2b88901c7b50d3e29619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_fa25b000db2b88901c7b50d3e296199d^sys_idNOT INcb25b000db2b88901c7b50d3e29619bf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fa25b000db2b88901c7b50d3e296199d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-09 14:30:32</sys_created_on>
+        <sys_id>cb25b000db2b88901c7b50d3e29619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-09 14:30:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

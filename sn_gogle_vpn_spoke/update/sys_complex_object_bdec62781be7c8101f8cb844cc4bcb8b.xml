@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDf9ec62783de7c810fe56361b490aa48b</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b3dc5f7adbdbc4901c7b50d3e29619c4</scope_name>
+        <serialized_content>{"FlowDesigner:FDf9ec62783de7c810fe56361b490aa48b":{},"FlowDesigner:FDf9ec62783de7c810fe56361b490aa48b.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"8d7b4522-a9de-4c95-ac62-4a408e278519\",\"default_value\":\"\",\"label\":\"Firewall\",\"mandatory\":\"false\",\"uiUniqueId\":\"eaa32594-f028-4f86-993c-c9ee5f7e900a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf9ec62783de7c810fe56361b490aa48b\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"e7478739-4e5b-4c1b-a890-e9ca62390e2d\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-12 07:09:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bdec62781be7c8101f8cb844cc4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDf9ec62783de7c810fe56361b490aa48b</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_complex_object_bdec62781be7c8101f8cb844cc4bcb8b</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 07:09:05</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

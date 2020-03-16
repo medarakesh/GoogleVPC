@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD495edec6cb27c01081a49b42b8d79aef</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b3dc5f7adbdbc4901c7b50d3e29619c4</scope_name>
+        <serialized_content>{"FlowDesigner:FD495edec6cb27c01081a49b42b8d79aef":{"$COCollectionField":[{"deniedconfiguration":{"IPProtocol":"String","IPProtocol.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"IP Protocol\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"},"Ports":["Any"],"Ports.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Ports\",\"mandatory\":\"true\",\"child_name\":\"Port\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Port\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"b60d80ac-7226-48c5-8f8d-957f7e487f3a\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Denied\",\"mandatory\":\"false\",\"child_name\":\"deniedconfiguration\",\"uiUniqueId\":\"7355783f-cd42-4a46-bbc1-37bde8d6e5ae\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD495edec6cb27c01081a49b42b8d79aef\",\"child_label\":\"Denied Configuration\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"6b06c6f8-0750-43d1-b53e-d6d7610dde6b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD495edec6cb27c01081a49b42b8d79aef.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Denied\",\"mandatory\":\"false\",\"child_name\":\"deniedconfiguration\",\"uiUniqueId\":\"7355783f-cd42-4a46-bbc1-37bde8d6e5ae\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD495edec6cb27c01081a49b42b8d79aef\",\"child_label\":\"Denied Configuration\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"6b06c6f8-0750-43d1-b53e-d6d7610dde6b\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 03:17:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0d5edec6db27c0101c7b50d3e29619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD495edec6cb27c01081a49b42b8d79aef</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_complex_object_0d5edec6db27c0101c7b50d3e29619ef</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:17:49</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

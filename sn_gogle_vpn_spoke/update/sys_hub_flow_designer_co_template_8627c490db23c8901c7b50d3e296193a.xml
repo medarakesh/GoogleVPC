@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <complex_definition>FDa7a50050de23c89012372b37d4faa139</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-10 05:47:59</sys_created_on>
+        <sys_id>8627c490db23c8901c7b50d3e296193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network</sys_name>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_8627c490db23c8901c7b50d3e296193a</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-10 05:47:59</sys_updated_on>
+        <template_label>Network</template_label>
+        <template_name>network</template_name>
+    </sys_hub_flow_designer_co_template>
+</record_update>

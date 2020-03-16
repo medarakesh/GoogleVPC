@@ -1,0 +1,1559 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Firewall Management">48265af8dbab0c901c7b50d3e296197f</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>create_firewall_for_egress</internal_name>
+        <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.sourceranges}}","label":"action➛Source Ranges","type":"action","ref":""},{"name":"{{action.sourceranges.Source_Range}}","label":"action➛Source Ranges➛Source Range","type":"action","ref":""},{"name":"{{action.sourceranges.sourcerange}}","label":"action➛Source Ranges➛Source Range","type":"action","ref":""},{"name":"{{action.destination_ranges}}","label":"action➛Destination Ranges","type":"action","ref":""},{"name":"{{action.destinationranges}}","label":"action➛Destination Ranges","type":"action","ref":""},{"name":"{{action.destinationranges.Destination_Range}}","label":"action➛Destination Ranges➛Destination Range","type":"action","ref":""},{"name":"{{action.destinationranges.destinationrange}}","label":"action➛Destination Ranges➛Destination Range","type":"action","ref":""},{"name":"{{action.sourcetags}}","label":"action➛Source Tags","type":"action","ref":""},{"name":"{{action.sourcetags.sourcetag}}","label":"action➛Source Tags➛Source Tag","type":"action","ref":""},{"name":"{{action.sourcetags.sourceTag}}","label":"action➛Source Tags➛Source Tag","type":"action","ref":""},{"name":"{{action.source_service_accounts}}","label":"action➛Source Service Accounts","type":"action","ref":""},{"name":"{{action.sourceserviceaccounts}}","label":"action➛Source Service Accounts","type":"action","ref":""},{"name":"{{action.sourceserviceaccounts.Source_Service_Account}}","label":"action➛Source Service Accounts➛Source Service Account","type":"action","ref":""},{"name":"{{action.sourceserviceaccounts.sourceserviceaccount}}","label":"action➛Source Service Accounts➛Source Service Account","type":"action","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Create Firewall For Egress</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:42:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a93152b91be3cc101f8cb844cc4bcb7e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Create Firewall For Egress</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_a93152b91be3cc101f8cb844cc4bcb7e</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:01:09</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=a93152b91be3cc101f8cb844cc4bcb7e"/>
+    <sys_variable_value action="DELETE" query="document_key=a93152b91be3cc101f8cb844cc4bcb7e"/>
+    <sys_hub_step_instance action="DELETE" query="action=a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT IN3a03def91be3cc101f8cb844cc4bcb20"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Create Firewall For Egress">a93152b91be3cc101f8cb844cc4bcb7e</action>
+        <cid>35e94adf-dcf1-4547-9072-672e3c0df1af</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Pre Processing</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:01</sys_created_on>
+        <sys_id>3a03def91be3cc101f8cb844cc4bcb20</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 02:59:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=3a03def91be3cc101f8cb844cc4bcb20"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3a03def91be3cc101f8cb844cc4bcb20</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>b203def91be3cc101f8cb844cc4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var vpc = new GoogleVPCUtils();
+    vpc.validateInputVariables(inputs, outputs);
+    vpc.validateMandatoryVariables(inputs, ['name', 'projectid']);
+    vpc.maptoOutputFromInput(inputs, outputs, ['projectid']);
+    vpc.createFirewallRule(inputs,outputs,'INGRESS');
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3a03def91be3cc101f8cb844cc4bcb20</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>fe03def91be3cc101f8cb844cc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=3a03def91be3cc101f8cb844cc4bcb20"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>ba03def91be3cc101f8cb844cc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>name</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>3e03def91be3cc101f8cb844cc4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>projectid</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>3a03def91be3cc101f8cb844cc4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.project_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>7e03def91be3cc101f8cb844cc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourcerange</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>7603def91be3cc101f8cb844cc4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceranges}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourceranges</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:54:31</sys_created_on>
+        <sys_id>e414da3d1be3cc101f8cb844cc4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:54:31</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceranges}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourceserviceaccounts</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>fe03def91be3cc101f8cb844cc4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceserviceaccounts}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourcetags</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>b203def91be3cc101f8cb844cc4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourcetags}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourcranges</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 02:59:10</sys_created_on>
+        <sys_id>f70adac2db27c0101c7b50d3e2961977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 02:59:10</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceranges}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="DELETE" query="model=3a03def91be3cc101f8cb844cc4bcb20^sys_idNOT IN818a5206db27c0101c7b50d3e29619b8,b203def91be3cc101f8cb844cc4bcb29,e93a5ec2db27c0101c7b50d3e29619c8,f603def91be3cc101f8cb844cc4bcb24"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sourcetags</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 03:01:09</sys_created_on>
+        <sys_id>818a5206db27c0101c7b50d3e29619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:01:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>b203def91be3cc101f8cb844cc4bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sourceranges</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 02:59:49</sys_created_on>
+        <sys_id>e93a5ec2db27c0101c7b50d3e29619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 02:59:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:01</sys_created_on>
+        <sys_id>f603def91be3cc101f8cb844cc4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="DELETE" query="model=a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT INbf829af91be3cc101f8cb844cc4bcbb6,def992c2db27c0101c7b50d3e29619c5,f7829af91be3cc101f8cb844cc4bcbbd,fc8a5206db27c0101c7b50d3e29619a8"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=590958f3-c4bf-4a44-b530-bacbbf150f44</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>project_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Project ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Firewall For Egress">a93152b91be3cc101f8cb844cc4bcb7e</model>
+        <model_id>a93152b91be3cc101f8cb844cc4bcb7e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:47:54</sys_created_on>
+        <sys_id>bf829af91be3cc101f8cb844cc4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:47:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Source Range,child_name=sourcerange,child_type=string,child_type_label=String,child_uiUniqueId=b4a7cca1-2a78-4380-bf58-2df15ac3963a,co_type_name=FD12f992c2e027c010c326bc892d2f4bc0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=ab2e6d6c-0eef-42ca-9a34-7d037d876c66</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sourceranges</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Source Ranges</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Firewall For Egress">a93152b91be3cc101f8cb844cc4bcb7e</model>
+        <model_id>a93152b91be3cc101f8cb844cc4bcb7e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 02:58:47</sys_created_on>
+        <sys_id>def992c2db27c0101c7b50d3e29619c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:01:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e150c61b-4634-487b-b8de-7113dd03eab1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Firewall For Egress">a93152b91be3cc101f8cb844cc4bcb7e</model>
+        <model_id>a93152b91be3cc101f8cb844cc4bcb7e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:47:54</sys_created_on>
+        <sys_id>f7829af91be3cc101f8cb844cc4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:47:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Source Tag,child_name=sourcetag,child_type=string,child_type_label=String,child_uiUniqueId=38fbe6ca-0a67-4fc2-be37-fc550d5339a2,co_type_name=FDbc8a5206c727c0107b3702f8ff7db09d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=4c24861c-13ef-44ed-b169-2b2b0308a3aa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sourcetags</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Source Tags</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Firewall For Egress">a93152b91be3cc101f8cb844cc4bcb7e</model>
+        <model_id>a93152b91be3cc101f8cb844cc4bcb7e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 03:01:09</sys_created_on>
+        <sys_id>fc8a5206db27c0101c7b50d3e29619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:01:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_step_instance action="DELETE" query="action=a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT IN3a03def91be3cc101f8cb844cc4bcb20"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Create Firewall For Egress">a93152b91be3cc101f8cb844cc4bcb7e</action>
+        <cid>35e94adf-dcf1-4547-9072-672e3c0df1af</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Pre Processing</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:01</sys_created_on>
+        <sys_id>3a03def91be3cc101f8cb844cc4bcb20</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 02:59:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=3a03def91be3cc101f8cb844cc4bcb20"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3a03def91be3cc101f8cb844cc4bcb20</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>b203def91be3cc101f8cb844cc4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var vpc = new GoogleVPCUtils();
+    vpc.validateInputVariables(inputs, outputs);
+    vpc.validateMandatoryVariables(inputs, ['name', 'projectid']);
+    vpc.maptoOutputFromInput(inputs, outputs, ['projectid']);
+    vpc.createFirewallRule(inputs,outputs,'INGRESS');
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3a03def91be3cc101f8cb844cc4bcb20</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>fe03def91be3cc101f8cb844cc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=3a03def91be3cc101f8cb844cc4bcb20"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>ba03def91be3cc101f8cb844cc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>name</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>3e03def91be3cc101f8cb844cc4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>projectid</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>3a03def91be3cc101f8cb844cc4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.project_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>7e03def91be3cc101f8cb844cc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourcerange</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>7603def91be3cc101f8cb844cc4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceranges}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourceranges</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:54:31</sys_created_on>
+        <sys_id>e414da3d1be3cc101f8cb844cc4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:54:31</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceranges}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourceserviceaccounts</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>fe03def91be3cc101f8cb844cc4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceserviceaccounts}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourcetags</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>b203def91be3cc101f8cb844cc4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourcetags}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>sourcranges</field>
+        <id>3a03def91be3cc101f8cb844cc4bcb20</id>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 02:59:10</sys_created_on>
+        <sys_id>f70adac2db27c0101c7b50d3e2961977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 02:59:10</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</table>
+        <value>{{action.sourceranges}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="DELETE" query="model=3a03def91be3cc101f8cb844cc4bcb20^sys_idNOT IN818a5206db27c0101c7b50d3e29619b8,b203def91be3cc101f8cb844cc4bcb29,e93a5ec2db27c0101c7b50d3e29619c8,f603def91be3cc101f8cb844cc4bcb24"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sourcetags</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 03:01:09</sys_created_on>
+        <sys_id>818a5206db27c0101c7b50d3e29619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:01:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:02</sys_created_on>
+        <sys_id>b203def91be3cc101f8cb844cc4bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sourceranges</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 02:59:49</sys_created_on>
+        <sys_id>e93a5ec2db27c0101c7b50d3e29619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 02:59:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Pre Processing">3a03def91be3cc101f8cb844cc4bcb20</model>
+        <model_id>3a03def91be3cc101f8cb844cc4bcb20</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:50:01</sys_created_on>
+        <sys_id>f603def91be3cc101f8cb844cc4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:50:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT IN33829af91be3cc101f8cb844cc4bcbbc,e6f99ac2db27c0101c7b50d3e296192d,fc8a5206db27c0101c7b50d3e29619ad,ff829af91be3cc101f8cb844cc4bcbc1"/>
+    <sys_documentation action="DELETE">
+        <element>project_id</element>
+        <help/>
+        <hint/>
+        <label>Project ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:47:54</sys_created_on>
+        <sys_id>33829af91be3cc101f8cb844cc4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:47:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>sourceranges</element>
+        <help/>
+        <hint/>
+        <label>Source Ranges</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 02:58:48</sys_created_on>
+        <sys_id>e6f99ac2db27c0101c7b50d3e296192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 02:58:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>sourcetags</element>
+        <help/>
+        <hint/>
+        <label>Source Tags</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 03:01:09</sys_created_on>
+        <sys_id>fc8a5206db27c0101c7b50d3e29619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:01:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>name</element>
+        <help/>
+        <hint/>
+        <label>Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-15 07:47:54</sys_created_on>
+        <sys_id>ff829af91be3cc101f8cb844cc4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-15 07:47:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</application>
+        <file_path/>
+        <instance_id>d8ac4750db3bfb400ae3ac44d496197d</instance_id>
+        <instance_name>aniket</instance_name>
+        <name>sys_hub_action_type_definition_a93152b91be3cc101f8cb844cc4bcb7e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value="Firewall Management"&gt;48265af8dbab0c901c7b50d3e296197f&lt;/category&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;create_firewall_for_egress&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.sourceranges}}","label":"action➛Source Ranges","type":"action","ref":""},{"name":"{{action.sourceranges.Source_Range}}","label":"action➛Source Ranges➛Source Range","type":"action","ref":""},{"name":"{{action.sourceranges.sourcerange}}","label":"action➛Source Ranges➛Source Range","type":"action","ref":""},{"name":"{{action.destination_ranges}}","label":"action➛Destination Ranges","type":"action","ref":""},{"name":"{{action.destinationranges}}","label":"action➛Destination Ranges","type":"action","ref":""},{"name":"{{action.destinationranges.Destination_Range}}","label":"action➛Destination Ranges➛Destination Range","type":"action","ref":""},{"name":"{{action.destinationranges.destinationrange}}","label":"action➛Destination Ranges➛Destination Range","type":"action","ref":""},{"name":"{{action.sourcetags}}","label":"action➛Source Tags","type":"action","ref":""},{"name":"{{action.sourcetags.sourcetag}}","label":"action➛Source Tags➛Source Tag","type":"action","ref":""},{"name":"{{action.sourcetags.sourceTag}}","label":"action➛Source Tags➛Source Tag","type":"action","ref":""},{"name":"{{action.source_service_accounts}}","label":"action➛Source Service Accounts","type":"action","ref":""},{"name":"{{action.sourceserviceaccounts}}","label":"action➛Source Service Accounts","type":"action","ref":""},{"name":"{{action.sourceserviceaccounts.Source_Service_Account}}","label":"action➛Source Service Accounts➛Source Service Account","type":"action","ref":""},{"name":"{{action.sourceserviceaccounts.sourceserviceaccount}}","label":"action➛Source Service Accounts➛Source Service Account","type":"action","ref":""}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Create Firewall For Egress&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;state&gt;draft&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:42:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Firewall For Egress&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_a93152b91be3cc101f8cb844cc4bcb7e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 03:01:09&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a93152b91be3cc101f8cb844cc4bcb7e"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a93152b91be3cc101f8cb844cc4bcb7e"/&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT IN3a03def91be3cc101f8cb844cc4bcb20"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Create Firewall For Egress"&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/action&gt;&lt;cid&gt;35e94adf-dcf1-4547-9072-672e3c0df1af&lt;/cid&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Pre Processing&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:01&lt;/sys_created_on&gt;&lt;sys_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 02:59:10&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3a03def91be3cc101f8cb844cc4bcb20"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;b203def91be3cc101f8cb844cc4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {
+  var vpc = new GoogleVPCUtils();
+    vpc.validateInputVariables(inputs, outputs);
+    vpc.validateMandatoryVariables(inputs, ['name', 'projectid']);
+    vpc.maptoOutputFromInput(inputs, outputs, ['projectid']);
+    vpc.createFirewallRule(inputs,outputs,'INGRESS');
+})(inputs, outputs);&lt;/value&gt;&lt;variable display_value=""&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;fe03def91be3cc101f8cb844cc4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value=""&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=3a03def91be3cc101f8cb844cc4bcb20"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;ba03def91be3cc101f8cb844cc4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;name&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;3e03def91be3cc101f8cb844cc4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.name}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;projectid&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;3a03def91be3cc101f8cb844cc4bcb3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.project_id}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;7e03def91be3cc101f8cb844cc4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourcerange&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;7603def91be3cc101f8cb844cc4bcb3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceranges}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourceranges&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:54:31&lt;/sys_created_on&gt;&lt;sys_id&gt;e414da3d1be3cc101f8cb844cc4bcbe9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:54:31&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceranges}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourceserviceaccounts&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;fe03def91be3cc101f8cb844cc4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceserviceaccounts}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourcetags&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;b203def91be3cc101f8cb844cc4bcb3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourcetags}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourcranges&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 02:59:10&lt;/sys_created_on&gt;&lt;sys_id&gt;f70adac2db27c0101c7b50d3e2961977&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 02:59:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceranges}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=3a03def91be3cc101f8cb844cc4bcb20^sys_idNOT IN818a5206db27c0101c7b50d3e29619b8,b203def91be3cc101f8cb844cc4bcb29,e93a5ec2db27c0101c7b50d3e29619c8,f603def91be3cc101f8cb844cc4bcb24"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;sourcetags&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;300&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 03:01:09&lt;/sys_created_on&gt;&lt;sys_id&gt;818a5206db27c0101c7b50d3e29619b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 03:01:09&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;b203def91be3cc101f8cb844cc4bcb29&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;sourceranges&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;200&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 02:59:49&lt;/sys_created_on&gt;&lt;sys_id&gt;e93a5ec2db27c0101c7b50d3e29619c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 02:59:49&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;projectid&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:01&lt;/sys_created_on&gt;&lt;sys_id&gt;f603def91be3cc101f8cb844cc4bcb24&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:01&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT INbf829af91be3cc101f8cb844cc4bcbb6,def992c2db27c0101c7b50d3e29619c5,f7829af91be3cc101f8cb844cc4bcbbd,fc8a5206db27c0101c7b50d3e29619a8"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=590958f3-c4bf-4a44-b530-bacbbf150f44&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;project_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Project ID&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Create Firewall For Egress"&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model&gt;&lt;model_id&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:47:54&lt;/sys_created_on&gt;&lt;sys_id&gt;bf829af91be3cc101f8cb844cc4bcbb6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:47:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=Source Range,child_name=sourcerange,child_type=string,child_type_label=String,child_uiUniqueId=b4a7cca1-2a78-4380-bf58-2df15ac3963a,co_type_name=FD12f992c2e027c010c326bc892d2f4bc0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=ab2e6d6c-0eef-42ca-9a34-7d037d876c66&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;sourceranges&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Source Ranges&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Create Firewall For Egress"&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model&gt;&lt;model_id&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 02:58:47&lt;/sys_created_on&gt;&lt;sys_id&gt;def992c2db27c0101c7b50d3e29619c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 03:01:09&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e150c61b-4634-487b-b8de-7113dd03eab1&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Create Firewall For Egress"&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model&gt;&lt;model_id&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:47:54&lt;/sys_created_on&gt;&lt;sys_id&gt;f7829af91be3cc101f8cb844cc4bcbbd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:47:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=Source Tag,child_name=sourcetag,child_type=string,child_type_label=String,child_uiUniqueId=38fbe6ca-0a67-4fc2-be37-fc550d5339a2,co_type_name=FDbc8a5206c727c0107b3702f8ff7db09d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=4c24861c-13ef-44ed-b169-2b2b0308a3aa&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;sourcetags&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Source Tags&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Create Firewall For Egress"&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model&gt;&lt;model_id&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;4&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 03:01:09&lt;/sys_created_on&gt;&lt;sys_id&gt;fc8a5206db27c0101c7b50d3e29619a8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 03:01:09&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT IN3a03def91be3cc101f8cb844cc4bcb20"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Create Firewall For Egress"&gt;a93152b91be3cc101f8cb844cc4bcb7e&lt;/action&gt;&lt;cid&gt;35e94adf-dcf1-4547-9072-672e3c0df1af&lt;/cid&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Pre Processing&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:01&lt;/sys_created_on&gt;&lt;sys_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 02:59:10&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3a03def91be3cc101f8cb844cc4bcb20"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;b203def91be3cc101f8cb844cc4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {
+  var vpc = new GoogleVPCUtils();
+    vpc.validateInputVariables(inputs, outputs);
+    vpc.validateMandatoryVariables(inputs, ['name', 'projectid']);
+    vpc.maptoOutputFromInput(inputs, outputs, ['projectid']);
+    vpc.createFirewallRule(inputs,outputs,'INGRESS');
+})(inputs, outputs);&lt;/value&gt;&lt;variable display_value=""&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;fe03def91be3cc101f8cb844cc4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value=""&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=3a03def91be3cc101f8cb844cc4bcb20"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;ba03def91be3cc101f8cb844cc4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;name&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;3e03def91be3cc101f8cb844cc4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.name}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;projectid&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;3a03def91be3cc101f8cb844cc4bcb3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.project_id}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;7e03def91be3cc101f8cb844cc4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourcerange&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;7603def91be3cc101f8cb844cc4bcb3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceranges}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourceranges&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:54:31&lt;/sys_created_on&gt;&lt;sys_id&gt;e414da3d1be3cc101f8cb844cc4bcbe9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:54:31&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceranges}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourceserviceaccounts&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;fe03def91be3cc101f8cb844cc4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceserviceaccounts}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourcetags&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;b203def91be3cc101f8cb844cc4bcb3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourcetags}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;sourcranges&lt;/field&gt;&lt;id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/id&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 02:59:10&lt;/sys_created_on&gt;&lt;sys_id&gt;f70adac2db27c0101c7b50d3e2961977&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 02:59:10&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/table&gt;&lt;value&gt;{{action.sourceranges}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=3a03def91be3cc101f8cb844cc4bcb20^sys_idNOT IN818a5206db27c0101c7b50d3e29619b8,b203def91be3cc101f8cb844cc4bcb29,e93a5ec2db27c0101c7b50d3e29619c8,f603def91be3cc101f8cb844cc4bcb24"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;sourcetags&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;300&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 03:01:09&lt;/sys_created_on&gt;&lt;sys_id&gt;818a5206db27c0101c7b50d3e29619b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 03:01:09&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:02&lt;/sys_created_on&gt;&lt;sys_id&gt;b203def91be3cc101f8cb844cc4bcb29&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:02&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;sourceranges&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;200&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 02:59:49&lt;/sys_created_on&gt;&lt;sys_id&gt;e93a5ec2db27c0101c7b50d3e29619c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 02:59:49&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;projectid&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Pre Processing"&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model&gt;&lt;model_id&gt;3a03def91be3cc101f8cb844cc4bcb20&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_3a03def91be3cc101f8cb844cc4bcb20&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:50:01&lt;/sys_created_on&gt;&lt;sys_id&gt;f603def91be3cc101f8cb844cc4bcb24&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:50:01&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e^sys_idNOT IN33829af91be3cc101f8cb844cc4bcbbc,e6f99ac2db27c0101c7b50d3e296192d,fc8a5206db27c0101c7b50d3e29619ad,ff829af91be3cc101f8cb844cc4bcbc1"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;project_id&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Project ID&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:47:54&lt;/sys_created_on&gt;&lt;sys_id&gt;33829af91be3cc101f8cb844cc4bcbbc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:47:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;sourceranges&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Source Ranges&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 02:58:48&lt;/sys_created_on&gt;&lt;sys_id&gt;e6f99ac2db27c0101c7b50d3e296192d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 02:58:48&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;sourcetags&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Source Tags&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-16 03:01:09&lt;/sys_created_on&gt;&lt;sys_id&gt;fc8a5206db27c0101c7b50d3e29619ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-16 03:01:09&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_a93152b91be3cc101f8cb844cc4bcb7e&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;praveen&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-15 07:47:54&lt;/sys_created_on&gt;&lt;sys_id&gt;ff829af91be3cc101f8cb844cc4bcbc1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Google Virtual Private Network"&gt;b3dc5f7adbdbc4901c7b50d3e29619c4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;praveen&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-15 07:47:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1338910550</payload_hash>
+        <record_name>Create Firewall For Egress</record_name>
+        <reverted_from/>
+        <source>84ec17badbdbc4901c7b50d3e296196e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 03:01:10</sys_created_on>
+        <sys_id>c18a5206db27c0101c7b50d3e29619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170e149b9500000001</sys_recorded_at>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:01:10</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>898a5206a727c0109c823a5ece92cedd</update_guid>
+        <update_guid_history>898a5206a727c0109c823a5ece92cedd:-1338910550,b93a5ec29f27c010f6edc6b5bd2fa0f2:-146059296,c01adac24e27c0108acd97a49234e593:-110252045,62f99ac29727c0106a97a947f9b6b753:1978603277,373992c26627c0101b808eff2e237643:1978407795,9ad4167d19e3cc1071a3f5854deb853f:437629489,e8141e3df7e3cc100d95921e5eb3de08:512806167,8b03def9e0e3cc1088ac3df48da9a25e:-1118752730,f7829af944e3cc10bc1f4d12840fe2f0:-2129150683,6d315eb9b3e3cc1002156163d2cd545c:1044862793</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 03:03:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>4deb84c4ceec447886377af71f8b67a4</sys_id>
+        <sys_metadata>a93152b91be3cc101f8cb844cc4bcb7e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Firewall For Egress</sys_name>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_scope_delete display_value="">0efe940ba2ce415cabc1c47d68764e90</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_a93152b91be3cc101f8cb844cc4bcb7e</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_a93152b91be3cc101f8cb844cc4bcb7e">c18a5206db27c0101c7b50d3e29619de</sys_update_version>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:03:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

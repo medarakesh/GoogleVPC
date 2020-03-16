@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <can_edit_in_studio>false</can_edit_in_studio>
+        <enforce_license>log</enforce_license>
+        <guided_setup_guid/>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_category>none</license_category>
+        <license_model>none</license_model>
+        <logo>e7c263bedbdbc4901c7b50d3e29619a8</logo>
+        <menu/>
+        <name>Google Virtual Private Network</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>sn_gogle_vpn_spoke</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>sn_gogle_vpn_spoke</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-06 05:30:49</sys_created_on>
+        <sys_id>b3dc5f7adbdbc4901c7b50d3e29619c4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-12 03:10:53</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>logo</file_name>
+        <hash>5cc18d66513da4e03cb98c914d50fc335ba29bc6b579c6264b07c6d595eee1e8</hash>
+        <image_height>80</image_height>
+        <image_width>80</image_width>
+        <size_bytes>1643</size_bytes>
+        <size_compressed>1666</size_compressed>
+        <state>available</state>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-06 05:56:44</sys_created_on>
+        <sys_id>e7c263bedbdbc4901c7b50d3e29619a8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-06 05:56:45</sys_updated_on>
+        <table_name>ZZ_YYsys_app</table_name>
+        <table_sys_id>b3dc5f7adbdbc4901c7b50d3e29619c4</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="e7c263bedbdbc4901c7b50d3e29619a8">e7c263bedbdbc4901c7b50d3e29619a8</sys_attachment>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-06 05:56:44</sys_created_on>
+        <sys_id>2bc263bedbdbc4901c7b50d3e29619a8</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2208</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="e7c263bedbdbc4901c7b50d3e29619a8">e7c263bedbdbc4901c7b50d3e29619a8</sys_attachment>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-06 05:56:44</sys_created_on>
+        <sys_id>abc263bedbdbc4901c7b50d3e29619a8</sys_id>
+    </sys_attachment_doc>
+</record_update>

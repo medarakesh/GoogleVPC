@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_gogle_vpn_spoke.GoogleVPCUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GoogleVPCUtils</name>
+        <script><![CDATA[var GoogleVPCUtils = Class.create();
+GoogleVPCUtils.prototype = {
+    initialize: function() {},
+    validateInputVariables: function(inputs, outputs) {
+        for (var key in inputs) {
+            var value = inputs[key];
+            if (typeof value == 'string')
+                inputs[key] = value.trim();
+            else
+                inputs[key] = value;
+        }
+        return inputs;
+    },
+    validateMandatoryVariables: function(obj, keys) {
+        keys.forEach(function(key) {
+            if (!obj[key])
+                throw new Error("Error while executing, mandatory information is not passed in " + key);
+        });
+    },
+    maptoOutputFromInput: function(inputs, outputs, keys) {
+
+        if (keys.length <= 0)
+            for (var key in inputs) {
+                outputs[key] = inputs[key];
+            } else {
+                keys.forEach(function(key) {
+                    outputs[key] = inputs[key];
+                });
+            }
+        return outputs;
+
+    },
+    trimArrayElements: function(arrayElements) {
+        var array = [];
+        arrayElements.forEach(function(arrayElement) {
+            if (arrayElement.trim())
+                array.push(arrayElement);
+        });
+        return array;
+
+    },
+    createFirewallRule: function(inputs, outputs, direction) {
+        gs.info(JSON.stringify(inputs));
+        var requestBody = {
+            'name': inputs.name.toLowerCase(),
+            'description': inputs.description,
+            'direction': direction,
+            'allowed': [],
+            'denied': [],
+            'sourceTags': [],
+            'targetTags': [],
+            'sourceRanges': [],
+            'destinationRanges': [],
+            'sourceServiceAccounts': [],
+            'targetServiceAccounts': [],
+            "logConfig": {
+                "enable": inputs['logconfigenable']
+            },
+            "disabled": inputs['disabled']
+        };
+        if (inputs.network)
+            requestBody['network'] = "projects/" + inputs.projectid + "/global/networks/" + inputs.network;
+        if (inputs.priority)
+            requestBody['priority'] = inputs.priority;
+        if (inputs.allowed) {
+            var allowed = [];
+
+            inputs.allowed.forEach(function(allowedConfig) {
+                var allowConfigObj = {};
+                if (allowedConfig['IPProtocol']) {
+                    allowConfigObj['IPProtocol'] = allowedConfig['IPProtocol'].trim();
+                }
+                if (allowedConfig['Ports']) {
+                    var collectAllowedPorts = [];
+                    allowedConfig['Ports'].forEach(function(port) {
+                        if (port.trim())
+                            collectAllowedPorts.push(port + '');
+                    });
+                    if (collectAllowedPorts.length > 0)
+                        allowConfigObj['ports'] = collectAllowedPorts;
+                }
+                if (allowConfigObj['IPProtocol'] && allowConfigObj['ports'].length > 0)
+                    allowed.push(allowConfigObj);
+            });
+            if (allowed.length > 0)
+                requestBody['allowed'] = allowed;
+
+        }
+        if (inputs.denied) {
+            var denied = [];
+
+            inputs.denied.forEach(function(deniedConfig) {
+                var deniedConfigObj = {};
+                if (deniedConfig['IPProtocol']) {
+                    deniedConfigObj['IPProtocol'] = deniedConfig['IPProtocol'].trim();
+                }
+                if (deniedConfig['Ports']) {
+                    var collectDeniedPorts = [];
+                    deniedConfig['Ports'].forEach(function(port) {
+                        if (port.trim())
+                            collectDeniedPorts.push(port + '');
+                    });
+                    if (collectDeniedPorts.length > 0)
+                        deniedConfigObj['ports'] = collectDeniedPorts;
+                }
+                if (deniedConfigObj['IPProtocol'] && deniedConfigObj['ports'].length > 0)
+                    denied.push(deniedConfigObj);
+            });
+            if (denied.length > 0)
+                requestBody['denied'] = denied;
+
+        }
+        if (inputs['sourceranges'])
+            requestBody['sourceRanges'] = this.trimArrayElements(inputs['sourceranges']);
+        if (inputs['sourcetags'])
+            requestBody['sourceTags'] = this.trimArrayElements(inputs['sourcetags']);
+        if (inputs['sourceserviceaccounts'])
+            requestBody['sourceServiceAccounts'] = this.trimArrayElements(inputs['sourceserviceaccounts']);
+        if (inputs['targettags'])
+            requestBody['targetTags'] = this.trimArrayElements(inputs['targettags']);
+        if (inputs['destinationranges'])
+            requestBody['destinationRanges'] = this.trimArrayElements(inputs['destinationranges']);
+        if (inputs['targetserviceaccounts'])
+            requestBody['targetServiceAccounts'] = this.trimArrayElements(inputs['targetserviceaccounts']);
+
+        if (requestBody['allowed'].length > 0 && requestBody['denied'].length > 0)
+            throw new Error('Should not specify both allowed and denied in the same time.');
+        if (direction == 'INGRESS' && requestBody['destinationRanges'].length > 0)
+            throw new Error('Should not specify destination range for ingress direction.');
+        if (direction == 'EGRESS' && (requestBody['sourceRanges'].length > 0 || requestBody['sourceTags'].length > 0))
+            throw new Error('Should not specify source range or tag for egress direction.');
+        if (inputs['priority'] && (requestBody['priority'] < 0 || requestBody['priority'] > 65535))
+            throw new Error('Invalid priority range value has been passed.');
+        if ((requestBody['sourceServiceAccounts'].length > 0 || requestBody['targetServiceAccounts'].length > 0) && (requestBody['sourceTags'].length > 0 || requestBody['targetTags'].length > 0))
+            throw new Error("ServiceAccounts and Tags are mutually exclusive and can't be combined in the same firewall rule.");
+
+        outputs.requestbody = JSON.stringify(requestBody);
+
+        return outputs.requestbody;
+
+    },
+
+    type: 'GoogleVPCUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-10 05:41:34</sys_created_on>
+        <sys_id>ec658810db23c8901c7b50d3e296193b</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>GoogleVPCUtils</sys_name>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_script_include_ec658810db23c8901c7b50d3e296193b</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 03:15:02</sys_updated_on>
+    </sys_script_include>
+</record_update>

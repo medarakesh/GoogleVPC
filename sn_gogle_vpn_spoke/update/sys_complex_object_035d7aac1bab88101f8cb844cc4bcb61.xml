@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD4f5d7aacafab8810b54d8b15baa6a360</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b3dc5f7adbdbc4901c7b50d3e29619c4</scope_name>
+        <serialized_content>{"FlowDesigner:FD4f5d7aacafab8810b54d8b15baa6a360":{"ServiceAccounts":["Any"],"ServiceAccounts.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Service Accounts\",\"mandatory\":\"false\",\"child_name\":\"ServiceAccount\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Service Account\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"2ad5bdfe-4a63-4974-a3b4-1de863add717\"}"},"destinationRanges":["Any"],"destinationRanges.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Destination Ranges\",\"mandatory\":\"false\",\"child_name\":\"destinationRange\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Destination Range\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"2130a08a-c38d-4178-a5aa-8be1092f8c1c\"}"},"targetTags":["Any"],"targetTags.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Target Tags\",\"mandatory\":\"false\",\"child_name\":\"targetTag\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Target Tag\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a4fa75fc-eccb-47c7-912f-e6940752a681\"}"}},"FlowDesigner:FD4f5d7aacafab8810b54d8b15baa6a360.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Target Properties\",\"mandatory\":\"false\",\"uiUniqueId\":\"f4da9db5-697e-48a5-9b3f-7251c11a8c7f\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD4f5d7aacafab8810b54d8b15baa6a360\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"4\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-11 13:42:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>035d7aac1bab88101f8cb844cc4bcb61</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>FD4f5d7aacafab8810b54d8b15baa6a360</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_complex_object_035d7aac1bab88101f8cb844cc4bcb61</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-11 16:13:55</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
