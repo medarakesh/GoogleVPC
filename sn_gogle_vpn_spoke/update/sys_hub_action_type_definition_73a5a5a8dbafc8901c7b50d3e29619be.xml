@@ -39,7 +39,7 @@
         <ih_action>true</ih_action>
         <internal_name>set_iam_policy</internal_name>
         <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.region}}","label":"action➛Region","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.subnetwork}}","label":"action➛Subnetwork","type":"action","ref":""},{"name":"{{action.policy}}","label":"action➛Policy","type":"action","ref":""},{"name":"{{action.policy.Bindings}}","label":"action➛Policy➛Bindings","type":"action","ref":""},{"name":"{{action.policy.bindings}}","label":"action➛Policy➛Bindings","type":"action","ref":""},{"name":"{{action.policy.bindings.Binding}}","label":"action➛Policy➛Bindings➛Binding","type":"action","ref":""},{"name":"{{action.policy.bindings.binding}}","label":"action➛Policy➛Bindings➛Binding","type":"action","ref":""},{"name":"{{action.policy.bindings.binding.Role}}","label":"action➛Policy➛Bindings➛Binding➛Role","type":"action","ref":""},{"name":"{{action.policy.bindings.binding.role}}","label":"action➛Policy➛Bindings➛Binding➛Role","type":"action","ref":""},{"name":"{{action.policy.bindings.binding.Members}}","label":"action➛Policy➛Bindings➛Binding➛Members","type":"action","ref":""},{"name":"{{action.policy.bindings.binding.members}}","label":"action➛Policy➛Bindings➛Binding➛Members","type":"action","ref":""},{"name":"{{action.policy.bindings.binding.members.Member}}","label":"action➛Policy➛Bindings➛Binding➛Members➛Member","type":"action","ref":""},{"name":"{{action.policy.bindings.binding.members.member}}","label":"action➛Policy➛Bindings➛Binding➛Members➛Member","type":"action","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].variable2}}","label":"step➛Pre Processing➛variable2","type":"step","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].projectid}}","label":"step➛Pre Processing➛projectid","type":"step","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].region}}","label":"step➛Pre Processing➛region","type":"step","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].name}}","label":"step➛Pre Processing➛name","type":"step","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].subnetwork}}","label":"step➛Pre Processing➛subnetwork","type":"step","ref":""},{"name":"{{step[b85249a3-0712-48a8-8497-54dc99a0fe67].policy}}","label":"step➛Pre Processing➛policy","type":"step","ref":""},{"name":"{{step[c2e2ed7e-9d12-4e11-a1cf-7e15667a72b2].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[c2e2ed7e-9d12-4e11-a1cf-7e15667a72b2].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[e20ae3f0-31bc-427a-9ee7-aff148398ae6].status}}","label":"step➛Script step➛Status","type":"step","ref":""},{"name":"{{step[e20ae3f0-31bc-427a-9ee7-aff148398ae6].variable1}}","label":"step➛Script step➛variable1","type":"step","ref":""},{"name":"{{step[e20ae3f0-31bc-427a-9ee7-aff148398ae6].errormessage}}","label":"step➛Script step➛ErrorMessage","type":"step","ref":""},{"name":"{{step[e20ae3f0-31bc-427a-9ee7-aff148398ae6].iampolicy}}","label":"step➛Script step➛IAMPolicy","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>b4c423781bebc8101f8cb844cc4bcb3c</latest_snapshot>
+        <latest_snapshot>cb8cfa461b6300501f8cb844cc4bcb8f</latest_snapshot>
         <master_snapshot>b4710a6cdbefc8901c7b50d3e29619d8</master_snapshot>
         <name>Set IAM Policy</name>
         <natlang/>
@@ -52,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>73a5a5a8dbafc8901c7b50d3e29619be</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Set IAM Policy</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
@@ -60,7 +60,7 @@
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_73a5a5a8dbafc8901c7b50d3e29619be</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 11:13:12</sys_updated_on>
+        <sys_updated_on>2020-03-16 05:29:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1656,7 +1656,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=73a5a5a8dbafc8901c7b50d3e29619be^sys_idNOT IN785db5a8dbefc8901c7b50d3e296199d,c55db5a8dbefc8901c7b50d3e29619a4,c95db5a8dbefc8901c7b50d3e29619bf,cd5db5a8dbefc8901c7b50d3e29619b6"/>
+    <sys_hub_action_input action="delete_multiple" query="model=73a5a5a8dbafc8901c7b50d3e29619be^sys_idNOT IN785db5a8dbefc8901c7b50d3e296199d,b77c3a461b6300501f8cb844cc4bcbce,c95db5a8dbefc8901c7b50d3e29619bf,cd5db5a8dbefc8901c7b50d3e29619b6"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1742,7 +1742,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2887fdac-9909-45de-8c09-2a87d9dfa1aa</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2887fdac-9909-45de-8c09-2a87d9dfa1aa</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1750,7 +1750,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label/>
@@ -1773,7 +1773,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <label>Region</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1798,8 +1798,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-11 09:02:45</sys_created_on>
-        <sys_id>c55db5a8dbefc8901c7b50d3e29619a4</sys_id>
+        <sys_created_on>2020-03-16 05:29:37</sys_created_on>
+        <sys_id>b77c3a461b6300501f8cb844cc4bcbce</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1807,7 +1807,7 @@
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-11 09:02:45</sys_updated_on>
+        <sys_updated_on>2020-03-16 05:29:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1819,6 +1819,33 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b77c3a461b6300501f8cb844cc4bcbce^sys_idNOT IN777c3a461b6300501f8cb844cc4bcbd5"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">b77c3a461b6300501f8cb844cc4bcbce</action_input>
+        <action_inputs/>
+        <action_type display_value="List Regions">8b1e65d5dbb200103dbef35eae9619ff</action_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 05:29:37</sys_created_on>
+        <sys_id>777c3a461b6300501f8cb844cc4bcbd5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 05:29:46</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=777c3a461b6300501f8cb844cc4bcbd5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>777c3a461b6300501f8cb844cc4bcbd5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 05:29:37</sys_created_on>
+        <sys_id>bf7c3a461b6300501f8cb844cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 05:29:37</sys_updated_on>
+        <value>{{action.project_id}}</value>
+        <variable display_value="">8441f159dbb200103dbef35eae961905</variable>
+    </sys_variable_value>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1989,25 +2016,11 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-11 09:02:45</sys_created_on>
         <sys_id>495db5a8dbefc8901c7b50d3e29619bd</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 11:13:03</sys_updated_on>
+        <sys_updated_on>2020-03-16 05:29:46</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=495db5a8dbefc8901c7b50d3e29619bd"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_input_action_instance</document>
-        <document_key>495db5a8dbefc8901c7b50d3e29619bd</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-11 09:02:45</sys_created_on>
-        <sys_id>815db5a8dbefc8901c7b50d3e29619bf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-11 09:02:45</sys_updated_on>
-        <value>{{action.region}}</value>
-        <variable display_value="">52f93858dba3c8901c7b50d3e2961923</variable>
-    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_input_action_instance</document>
         <document_key>495db5a8dbefc8901c7b50d3e29619bd</document_key>
@@ -3754,7 +3767,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be^sys_idNOT IN015db5a8dbefc8901c7b50d3e29619a3,095db5a8dbefc8901c7b50d3e29619b5,855db5a8dbefc8901c7b50d3e29619c4,c15db5a8dbefc8901c7b50d3e29619bc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be^sys_idNOT IN015db5a8dbefc8901c7b50d3e29619a3,855db5a8dbefc8901c7b50d3e29619c4,c15db5a8dbefc8901c7b50d3e29619bc,ff7c3a461b6300501f8cb844cc4bcbd3"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>project_id</element>
         <help/>
@@ -3767,29 +3780,6 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-11 09:02:45</sys_created_on>
         <sys_id>015db5a8dbefc8901c7b50d3e29619a3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-11 09:02:45</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>region</element>
-        <help/>
-        <hint/>
-        <label>Region</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-11 09:02:45</sys_created_on>
-        <sys_id>095db5a8dbefc8901c7b50d3e29619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
@@ -3847,7 +3837,51 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be^sys_idNOT IN855db5a8dbefc8901c7b50d3e29619ba,f561866cdbefc8901c7b50d3e2961947,548e75e8dbefc8901c7b50d3e2961994,bd61866cdbefc8901c7b50d3e2961948,7961866cdbefc8901c7b50d3e2961949,d08e75e8dbefc8901c7b50d3e2961995"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>region</element>
+        <help/>
+        <hint/>
+        <label>Region</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 05:29:37</sys_created_on>
+        <sys_id>ff7c3a461b6300501f8cb844cc4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 05:29:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be^sys_idNOT IN7f7c3a461b6300501f8cb844cc4bcbd1,855db5a8dbefc8901c7b50d3e29619ba,f561866cdbefc8901c7b50d3e2961947,548e75e8dbefc8901c7b50d3e2961994,bd61866cdbefc8901c7b50d3e2961948,7961866cdbefc8901c7b50d3e2961949,d08e75e8dbefc8901c7b50d3e2961995"/>
+    <sys_choice field="region" table="var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be</name>
+            <sequence>0</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 05:29:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f7c3a461b6300501f8cb844cc4bcbd1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 05:29:46</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
     <sys_choice field="subnetwork" table="var__m_sys_hub_action_input_73a5a5a8dbafc8901c7b50d3e29619be">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -4075,17 +4109,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Set IAM Policy">73a5a5a8dbafc8901c7b50d3e29619be</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"5e718a6cdbefc8901c7b50d3e2961964","name":"plan"}}</plan>
-        <snapshot>b4c423781bebc8101f8cb844cc4bcb3c</snapshot>
+        <snapshot>cb8cfa461b6300501f8cb844cc4bcb8f</snapshot>
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-11 09:20:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5e718a6cdbefc8901c7b50d3e2961964</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 11:13:15</sys_updated_on>
+        <sys_updated_on>2020-03-16 05:29:58</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5729,12 +5763,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=b4710a6cdbefc8901c7b50d3e29619d8^sys_idNOT IN38710a6cdbefc8901c7b50d3e29619f6,70710a6cdbefc8901c7b50d3e29619e2,b0710a6cdbefc8901c7b50d3e29619e8,f4710a6cdbefc8901c7b50d3e29619db"/>
+    <sys_hub_action_input action="delete_multiple" query="model=b4710a6cdbefc8901c7b50d3e29619d8^sys_idNOT IN38710a6cdbefc8901c7b50d3e29619f6,b0710a6cdbefc8901c7b50d3e29619e8,bf8c3e461b6300501f8cb844cc4bcb69,f4710a6cdbefc8901c7b50d3e29619db"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FD91c463788debc81013ab9fdf25a8562b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=0f737d8b-155b-494d-85d7-4e8e39bc3faa</attributes>
+        <attributes>co_type_name=FD7f8c3e46c363005074c0649079ba725b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=0f737d8b-155b-494d-85d7-4e8e39bc3faa</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5792,95 +5826,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-11 09:20:46</sys_created_on>
         <sys_id>38710a6cdbefc8901c7b50d3e29619f6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 11:13:11</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_input>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2887fdac-9909-45de-8c09-2a87d9dfa1aa</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>region</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Region</label>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Set IAM Policy">b4710a6cdbefc8901c7b50d3e29619d8</model>
-        <model_id>b4710a6cdbefc8901c7b50d3e29619d8</model_id>
-        <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-11 09:20:46</sys_created_on>
-        <sys_id>70710a6cdbefc8901c7b50d3e29619e2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-11 09:20:46</sys_updated_on>
+        <sys_updated_on>2020-03-16 05:29:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5981,25 +5934,11 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-11 09:20:46</sys_created_on>
         <sys_id>70710a6cdbefc8901c7b50d3e29619f5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 11:13:11</sys_updated_on>
+        <sys_updated_on>2020-03-16 05:29:53</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=70710a6cdbefc8901c7b50d3e29619f5"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_input_action_instance</document>
-        <document_key>70710a6cdbefc8901c7b50d3e29619f5</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-11 09:20:46</sys_created_on>
-        <sys_id>70710a6cdbefc8901c7b50d3e29619f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-11 09:20:46</sys_updated_on>
-        <value>{{action.region}}</value>
-        <variable display_value="">52f93858dba3c8901c7b50d3e2961923</variable>
-    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_input_action_instance</document>
         <document_key>70710a6cdbefc8901c7b50d3e29619f5</document_key>
@@ -6013,6 +5952,114 @@
         <sys_updated_on>2020-03-11 09:20:46</sys_updated_on>
         <value>{{action.project_id}}</value>
         <variable display_value="">92f9b058dba3c8901c7b50d3e29619f6</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2887fdac-9909-45de-8c09-2a87d9dfa1aa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Region</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Set IAM Policy">b4710a6cdbefc8901c7b50d3e29619d8</model>
+        <model_id>b4710a6cdbefc8901c7b50d3e29619d8</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 05:29:53</sys_created_on>
+        <sys_id>bf8c3e461b6300501f8cb844cc4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 05:29:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bf8c3e461b6300501f8cb844cc4bcb69^sys_idNOT INff8c3e461b6300501f8cb844cc4bcb70"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">bf8c3e461b6300501f8cb844cc4bcb69</action_input>
+        <action_inputs/>
+        <action_type display_value="List Regions">8b1e65d5dbb200103dbef35eae9619ff</action_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 05:29:53</sys_created_on>
+        <sys_id>ff8c3e461b6300501f8cb844cc4bcb70</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 05:29:53</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ff8c3e461b6300501f8cb844cc4bcb70"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>ff8c3e461b6300501f8cb844cc4bcb70</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 05:29:53</sys_created_on>
+        <sys_id>3b8c3e461b6300501f8cb844cc4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 05:29:53</sys_updated_on>
+        <value>{{action.project_id}}</value>
+        <variable display_value="">8441f159dbb200103dbef35eae961905</variable>
     </sys_variable_value>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -7815,7 +7862,30 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8^sys_idNOT IN89714a6cdbefc8901c7b50d3e2961907,b8710a6cdbefc8901c7b50d3e29619e0,f8710a6cdbefc8901c7b50d3e29619e6,f8710a6cdbefc8901c7b50d3e29619f3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8^sys_idNOT IN7b8c3e461b6300501f8cb844cc4bcb6f,89714a6cdbefc8901c7b50d3e2961907,b8710a6cdbefc8901c7b50d3e29619e0,f8710a6cdbefc8901c7b50d3e29619f3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>region</element>
+        <help/>
+        <hint/>
+        <label>Region</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 05:29:53</sys_created_on>
+        <sys_id>7b8c3e461b6300501f8cb844cc4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 05:29:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>policy</element>
         <help/>
@@ -7863,29 +7933,6 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>region</element>
-        <help/>
-        <hint/>
-        <label>Region</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-11 09:20:46</sys_created_on>
-        <sys_id>f8710a6cdbefc8901c7b50d3e29619e6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-11 09:20:46</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
         <element>subnetwork</element>
         <help/>
         <hint/>
@@ -7908,7 +7955,28 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8^sys_idNOT IN78710a6cdbefc8901c7b50d3e29619eb,34710a6cdbefc8901c7b50d3e29619ec,fc710a6cdbefc8901c7b50d3e29619ec,b8710a6cdbefc8901c7b50d3e29619ed,74710a6cdbefc8901c7b50d3e29619ee,30710a6cdbefc8901c7b50d3e29619ef"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8^sys_idNOT IN778c3e461b6300501f8cb844cc4bcb6d,78710a6cdbefc8901c7b50d3e29619eb,34710a6cdbefc8901c7b50d3e29619ec,fc710a6cdbefc8901c7b50d3e29619ec,b8710a6cdbefc8901c7b50d3e29619ed,74710a6cdbefc8901c7b50d3e29619ee,30710a6cdbefc8901c7b50d3e29619ef"/>
+    <sys_choice field="region" table="var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8</name>
+            <sequence>0</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 05:29:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>778c3e461b6300501f8cb844cc4bcb6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 05:29:53</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
     <sys_choice field="subnetwork" table="var__m_sys_hub_action_input_b4710a6cdbefc8901c7b50d3e29619d8">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

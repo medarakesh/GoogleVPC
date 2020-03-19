@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDe146230ace2700503d981b03bf5e7fd1</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b3dc5f7adbdbc4901c7b50d3e29619c4</scope_name>
+        <serialized_content>{"FlowDesigner:FDe146230ace2700503d981b03bf5e7fd1":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDe146230ace2700503d981b03bf5e7fd1.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Destination Ranges\",\"mandatory\":\"false\",\"child_name\":\"destinationrange\",\"uiUniqueId\":\"9074d5e7-a5fe-4f16-91d0-202489ae15f6\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDe146230ace2700503d981b03bf5e7fd1\",\"child_label\":\"Destination Range\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"9\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"72e7890f-3a65-4046-bb9c-bb2d953edfbb\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 08:32:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a546230a1b2700501f8cb844cc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDe146230ace2700503d981b03bf5e7fd1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name>sys_complex_object_a546230a1b2700501f8cb844cc4bcbd1</sys_update_name>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 08:32:08</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

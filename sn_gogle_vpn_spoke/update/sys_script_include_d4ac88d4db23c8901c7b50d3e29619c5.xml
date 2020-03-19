@@ -76,12 +76,14 @@ GoogleVPCErrorHandler.prototype = {
             outputs.errormessage = "Requested network is doesn't exist.";
         else if (errorCode == 400 && errorMessage.indexOf('Invalid IP protocol specification') != -1)
             outputs.errormessage = "Invalid IP protocol specification has been passed.";
-		else if (errorCode == 400 && errorMessage.indexOf('Invalid port range specification') != -1)
+        else if (errorCode == 400 && errorMessage.indexOf('Invalid port range specification') != -1)
             outputs.errormessage = "Invalid port range specification has been passed.";
-		else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
+        else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
             outputs.errormessage = "Service accounts must be valid RFC 822 email addresses.";
-		else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
+        else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
             outputs.errormessage = "Service accounts must be valid RFC 822 email addresses.";
+        else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1 && errorMessage.indexOf('global/firewalls') != -1)
+            outputs.errormessage = "Requested firewall is doesn't exist.";
         else if (!outputs.errormessage)
             outputs.errormessage = errorMessage;
 
@@ -95,13 +97,13 @@ GoogleVPCErrorHandler.prototype = {
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 06:13:46</sys_created_on>
         <sys_id>d4ac88d4db23c8901c7b50d3e29619c5</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>GoogleVPCErrorHandler</sys_name>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_script_include_d4ac88d4db23c8901c7b50d3e29619c5</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 08:57:18</sys_updated_on>
+        <sys_updated_on>2020-03-16 06:49:34</sys_updated_on>
     </sys_script_include>
 </record_update>

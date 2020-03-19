@@ -38,7 +38,7 @@
         <ih_action>false</ih_action>
         <internal_name>list_sub_networks</internal_name>
         <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.region}}","label":"action➛Region","type":"action","ref":""},{"name":"{{step[5612d1e5-bca6-4313-b769-cc8602ba60de].variable}}","label":"step➛List Subnetwork➛variable","type":"step","ref":""},{"name":"{{step[5612d1e5-bca6-4313-b769-cc8602ba60de].subnetworks}}","label":"step➛List Subnetwork➛Subnetworks","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>3c3c42741b67c8101f8cb844cc4bcbfc</latest_snapshot>
+        <latest_snapshot>f67907061ba300501f8cb844cc4bcb45</latest_snapshot>
         <master_snapshot>463af858dba3c8901c7b50d3e2961985</master_snapshot>
         <name>List Subnetworks</name>
         <natlang/>
@@ -51,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fb38f4d4dba3c8901c7b50d3e29619c6</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>List Subnetworks</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
@@ -59,7 +59,7 @@
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_fb38f4d4dba3c8901c7b50d3e29619c6</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 04:46:14</sys_updated_on>
+        <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -442,12 +442,12 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=fb38f4d4dba3c8901c7b50d3e29619c6^sys_idNOT IN52f93858dba3c8901c7b50d3e2961923,92f9b058dba3c8901c7b50d3e29619f6"/>
+    <sys_hub_action_input action="delete_multiple" query="model=fb38f4d4dba3c8901c7b50d3e29619c6^sys_idNOT IN215943061ba300501f8cb844cc4bcb2c,92f9b058dba3c8901c7b50d3e29619f6"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0234a372-5669-46a3-95b9-d5432c8506e5</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0234a372-5669-46a3-95b9-d5432c8506e5</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -455,9 +455,9 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
-        <choice_table/>
+        <choice_table>rugged-shuttle-266007</choice_table>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -478,7 +478,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <label>Region</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -503,16 +503,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-10 09:30:00</sys_created_on>
-        <sys_id>52f93858dba3c8901c7b50d3e2961923</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2020-03-16 06:25:43</sys_created_on>
+        <sys_id>215943061ba300501f8cb844cc4bcb2c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 09:30:00</sys_updated_on>
+        <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -524,6 +524,33 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=215943061ba300501f8cb844cc4bcb2c^sys_idNOT IN615943061ba300501f8cb844cc4bcb35"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">215943061ba300501f8cb844cc4bcb2c</action_input>
+        <action_inputs/>
+        <action_type display_value="List Regions">8b1e65d5dbb200103dbef35eae9619ff</action_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 06:25:43</sys_created_on>
+        <sys_id>615943061ba300501f8cb844cc4bcb35</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=615943061ba300501f8cb844cc4bcb35"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>615943061ba300501f8cb844cc4bcb35</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 06:25:43</sys_created_on>
+        <sys_id>e15943061ba300501f8cb844cc4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 06:25:43</sys_updated_on>
+        <value>{{action.project_id}}</value>
+        <variable display_value="">8441f159dbb200103dbef35eae961905</variable>
+    </sys_variable_value>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1053,7 +1080,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6^sys_idNOT IN9af93858dba3c8901c7b50d3e2961921,daf93858dba3c8901c7b50d3e2961927"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6^sys_idNOT IN9af93858dba3c8901c7b50d3e2961921,e95943061ba300501f8cb844cc4bcb33"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>project_id</element>
         <help/>
@@ -1087,8 +1114,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-10 09:30:00</sys_created_on>
-        <sys_id>daf93858dba3c8901c7b50d3e2961927</sys_id>
+        <sys_created_on>2020-03-16 06:25:43</sys_created_on>
+        <sys_id>e95943061ba300501f8cb844cc4bcb33</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
@@ -1096,10 +1123,450 @@
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 09:30:00</sys_updated_on>
+        <sys_updated_on>2020-03-16 06:25:43</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6^sys_idNOT INa679c3061ba300501f8cb844cc4bcb2b,2a79c3061ba300501f8cb844cc4bcb2a,6279c3061ba300501f8cb844cc4bcb2c,2e79c3061ba300501f8cb844cc4bcb2c,6a79c3061ba300501f8cb844cc4bcbdb,2679c3061ba300501f8cb844cc4bcbdc,ee79c3061ba300501f8cb844cc4bcbdc,aa79c3061ba300501f8cb844cc4bcbdd,6679c3061ba300501f8cb844cc4bcbde,2279c3061ba300501f8cb844cc4bcbdf,ea79c3061ba300501f8cb844cc4bcbdf,a679c3061ba300501f8cb844cc4bcbe0,6279c3061ba300501f8cb844cc4bcbe1,2e79c3061ba300501f8cb844cc4bcbe1,e679c3061ba300501f8cb844cc4bcbe2,a279c3061ba300501f8cb844cc4bcbe3,6e79c3061ba300501f8cb844cc4bcbe3,2a79c3061ba300501f8cb844cc4bcbe4,e279c3061ba300501f8cb844cc4bcbe5,ae79c3061ba300501f8cb844cc4bcbe5,6a79c3061ba300501f8cb844cc4bcbe6,2679c3061ba300501f8cb844cc4bcbe7,a679c3061ba300501f8cb844cc4bcbf4"/>
+    <sys_choice field="region" table="var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-EAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>0</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a679c3061ba300501f8cb844cc4bcb2b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>asia-east1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>1</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a79c3061ba300501f8cb844cc4bcb2a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-EAST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>1</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6279c3061ba300501f8cb844cc4bcb2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>asia-east2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-NORTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>2</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2e79c3061ba300501f8cb844cc4bcb2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>asia-northeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-NORTHEAST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>3</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a79c3061ba300501f8cb844cc4bcbdb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>asia-northeast2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-NORTHEAST3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>4</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2679c3061ba300501f8cb844cc4bcbdc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>asia-northeast3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-SOUTH1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>5</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee79c3061ba300501f8cb844cc4bcbdc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>asia-south1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-SOUTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>6</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa79c3061ba300501f8cb844cc4bcbdd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>asia-southeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AUSTRALIA-SOUTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>7</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6679c3061ba300501f8cb844cc4bcbde</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>australia-southeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-NORTH1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>8</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2279c3061ba300501f8cb844cc4bcbdf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:19</sys_updated_on>
+            <value>europe-north1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>9</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea79c3061ba300501f8cb844cc4bcbdf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>europe-west1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>10</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a679c3061ba300501f8cb844cc4bcbe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>europe-west2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>11</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6279c3061ba300501f8cb844cc4bcbe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>europe-west3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST4</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>12</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2e79c3061ba300501f8cb844cc4bcbe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>europe-west4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST6</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>13</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e679c3061ba300501f8cb844cc4bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>europe-west6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NORTHAMERICA-NORTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>14</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a279c3061ba300501f8cb844cc4bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>northamerica-northeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SOUTHAMERICA-EAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>15</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e79c3061ba300501f8cb844cc4bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>southamerica-east1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-CENTRAL1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>16</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a79c3061ba300501f8cb844cc4bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>us-central1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-EAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>17</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e279c3061ba300501f8cb844cc4bcbe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>us-east1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-EAST4</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>18</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae79c3061ba300501f8cb844cc4bcbe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>us-east4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-WEST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>19</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a79c3061ba300501f8cb844cc4bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>us-west1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-WEST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>20</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2679c3061ba300501f8cb844cc4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>us-west2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-WEST3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fb38f4d4dba3c8901c7b50d3e29619c6</name>
+            <sequence>21</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a679c3061ba300501f8cb844cc4bcbf4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:20</sys_updated_on>
+            <value>us-west3</value>
+        </sys_choice>
+    </sys_choice>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_fb38f4d4dba3c8901c7b50d3e29619c6^sys_idNOT INaaf93858dba3c8901c7b50d3e2961987"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>
@@ -1128,17 +1595,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="List Subnetworks">fb38f4d4dba3c8901c7b50d3e29619c6</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"2e3a3c58dba3c8901c7b50d3e2961921","name":"plan"}}</plan>
-        <snapshot>3c3c42741b67c8101f8cb844cc4bcbfc</snapshot>
+        <snapshot>f67907061ba300501f8cb844cc4bcb45</snapshot>
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 09:31:06</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2e3a3c58dba3c8901c7b50d3e2961921</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 04:46:15</sys_updated_on>
+        <sys_updated_on>2020-03-16 06:26:24</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1580,7 +2047,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=463af858dba3c8901c7b50d3e2961985^sys_idNOT IN463af858dba3c8901c7b50d3e2961986,ce3af858dba3c8901c7b50d3e296198c"/>
+    <sys_hub_action_input action="delete_multiple" query="model=463af858dba3c8901c7b50d3e2961985^sys_idNOT IN463af858dba3c8901c7b50d3e2961986,df7907061ba300501f8cb844cc4bcbbf"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1666,7 +2133,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0234a372-5669-46a3-95b9-d5432c8506e5</attributes>
+        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0234a372-5669-46a3-95b9-d5432c8506e5</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1674,9 +2141,9 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
-        <choice_table/>
+        <choice_table>rugged-shuttle-266007</choice_table>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -1697,7 +2164,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <label>Region</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1722,16 +2189,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-10 09:31:04</sys_created_on>
-        <sys_id>ce3af858dba3c8901c7b50d3e296198c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+        <sys_id>df7907061ba300501f8cb844cc4bcbbf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 09:31:04</sys_updated_on>
+        <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1743,6 +2210,33 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=df7907061ba300501f8cb844cc4bcbbf^sys_idNOT IN1f7907061ba300501f8cb844cc4bcbd8"/>
+    <sys_hub_action_input_action_instance action="INSERT_OR_UPDATE">
+        <action_input display_value="">df7907061ba300501f8cb844cc4bcbbf</action_input>
+        <action_inputs/>
+        <action_type display_value="List Regions">8b1e65d5dbb200103dbef35eae9619ff</action_type>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+        <sys_id>1f7907061ba300501f8cb844cc4bcbd8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+    </sys_hub_action_input_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1f7907061ba300501f8cb844cc4bcbd8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_input_action_instance</document>
+        <document_key>1f7907061ba300501f8cb844cc4bcbd8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+        <sys_id>577907061ba300501f8cb844cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+        <value>{{action.project_id}}</value>
+        <variable display_value="">8441f159dbb200103dbef35eae961905</variable>
+    </sys_variable_value>
     <sys_hub_action_output action="delete_multiple" query="model=463af858dba3c8901c7b50d3e2961985^sys_idNOT IN863af858dba3c8901c7b50d3e29619e2"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2191,30 +2685,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985^sys_idNOT IN023af858dba3c8901c7b50d3e296199e,0a3af858dba3c8901c7b50d3e296198b"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>region</element>
-        <help/>
-        <hint/>
-        <label>Region</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-10 09:31:04</sys_created_on>
-        <sys_id>023af858dba3c8901c7b50d3e296199e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 09:31:04</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985^sys_idNOT IN0a3af858dba3c8901c7b50d3e296198b,977907061ba300501f8cb844cc4bcbd7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>project_id</element>
         <help/>
@@ -2238,6 +2709,469 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>region</element>
+        <help/>
+        <hint/>
+        <label>Region</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>praveen</sys_created_by>
+        <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+        <sys_id>977907061ba300501f8cb844cc4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>praveen</sys_updated_by>
+        <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985^sys_idNOT IN977907061ba300501f8cb844cc4bcbc3,177907061ba300501f8cb844cc4bcbc4,df7907061ba300501f8cb844cc4bcbc4,9b7907061ba300501f8cb844cc4bcbc5,577907061ba300501f8cb844cc4bcbc6,137907061ba300501f8cb844cc4bcbc7,db7907061ba300501f8cb844cc4bcbc7,977907061ba300501f8cb844cc4bcbc8,537907061ba300501f8cb844cc4bcbc9,1f7907061ba300501f8cb844cc4bcbc9,d77907061ba300501f8cb844cc4bcbca,937907061ba300501f8cb844cc4bcbcb,5f7907061ba300501f8cb844cc4bcbcb,1b7907061ba300501f8cb844cc4bcbcc,d37907061ba300501f8cb844cc4bcbcd,9f7907061ba300501f8cb844cc4bcbcd,5b7907061ba300501f8cb844cc4bcbce,177907061ba300501f8cb844cc4bcbcf,df7907061ba300501f8cb844cc4bcbcf,9b7907061ba300501f8cb844cc4bcbd0,577907061ba300501f8cb844cc4bcbd1,137907061ba300501f8cb844cc4bcbd2,db7907061ba300501f8cb844cc4bcbd2"/>
+    <sys_choice field="region" table="var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>0</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>977907061ba300501f8cb844cc4bcbc3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-EAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>1</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>177907061ba300501f8cb844cc4bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>asia-east1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-EAST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>2</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df7907061ba300501f8cb844cc4bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>asia-east2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-NORTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>3</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9b7907061ba300501f8cb844cc4bcbc5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>asia-northeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-NORTHEAST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>4</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>577907061ba300501f8cb844cc4bcbc6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>asia-northeast2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-NORTHEAST3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>5</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>137907061ba300501f8cb844cc4bcbc7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>asia-northeast3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-SOUTH1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>6</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db7907061ba300501f8cb844cc4bcbc7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>asia-south1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ASIA-SOUTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>7</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>977907061ba300501f8cb844cc4bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>asia-southeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AUSTRALIA-SOUTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>8</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>537907061ba300501f8cb844cc4bcbc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>australia-southeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-NORTH1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>9</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1f7907061ba300501f8cb844cc4bcbc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>europe-north1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>10</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d77907061ba300501f8cb844cc4bcbca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>europe-west1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>11</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>937907061ba300501f8cb844cc4bcbcb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>europe-west2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>12</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f7907061ba300501f8cb844cc4bcbcb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>europe-west3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST4</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>13</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b7907061ba300501f8cb844cc4bcbcc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>europe-west4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUROPE-WEST6</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>14</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d37907061ba300501f8cb844cc4bcbcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>europe-west6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NORTHAMERICA-NORTHEAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>15</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f7907061ba300501f8cb844cc4bcbcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>northamerica-northeast1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SOUTHAMERICA-EAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>16</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b7907061ba300501f8cb844cc4bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>southamerica-east1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-CENTRAL1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>17</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>177907061ba300501f8cb844cc4bcbcf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>us-central1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-EAST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>18</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df7907061ba300501f8cb844cc4bcbcf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>us-east1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-EAST4</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>19</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9b7907061ba300501f8cb844cc4bcbd0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>us-east4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-WEST1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>20</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>577907061ba300501f8cb844cc4bcbd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>us-west1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-WEST2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>21</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>137907061ba300501f8cb844cc4bcbd2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>us-west2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US-WEST3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_463af858dba3c8901c7b50d3e2961985</name>
+            <sequence>22</sequence>
+            <sys_created_by>praveen</sys_created_by>
+            <sys_created_on>2020-03-16 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db7907061ba300501f8cb844cc4bcbd2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>praveen</sys_updated_by>
+            <sys_updated_on>2020-03-16 06:26:23</sys_updated_on>
+            <value>us-west3</value>
+        </sys_choice>
+    </sys_choice>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_463af858dba3c8901c7b50d3e2961985^sys_idNOT INc63af858dba3c8901c7b50d3e29619e7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>

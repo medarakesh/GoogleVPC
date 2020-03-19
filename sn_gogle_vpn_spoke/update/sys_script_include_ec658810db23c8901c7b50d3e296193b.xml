@@ -51,8 +51,6 @@ GoogleVPCUtils.prototype = {
     createFirewallRule: function(inputs, outputs, direction) {
         gs.info(JSON.stringify(inputs));
         var requestBody = {
-            'name': inputs.name.toLowerCase(),
-            'description': inputs.description,
             'direction': direction,
             'allowed': [],
             'denied': [],
@@ -67,6 +65,11 @@ GoogleVPCUtils.prototype = {
             },
             "disabled": inputs['disabled']
         };
+        if (inputs.name)
+            requestBody["name"] = inputs.name;
+        if (inputs.description)
+            requestBody["description"] = inputs.description;
+
         if (inputs.network)
             requestBody['network'] = "projects/" + inputs.projectid + "/global/networks/" + inputs.network;
         if (inputs.priority)
@@ -148,6 +151,28 @@ GoogleVPCUtils.prototype = {
         return outputs.requestbody;
 
     },
+    createIPAdresses: function(inputs, outputs) {
+        var requestBody = {
+            'name': inputs.name.toLowerCase()
+
+        };
+        if (inputs["description"])
+            requestBody["description"] = inputs["description"];
+        if (inputs["addresstype"])
+            requestBody["addressType"] = inputs["addresstype"];
+        if (inputs["networktier"])
+            requestBody["networkTier"] = inputs["networktier"];
+        if (inputs["address"])
+            requestBody["address"] = inputs["address"];
+        if (inputs["network"])
+            requestBody["network"] = inputs["network"];
+        if (inputs["subnetwork"])
+            requestBody["subnetwork"] = inputs["subnetwork"];
+
+        outputs.requestbody = JSON.stringify(requestBody);
+        return outputs.requestbody;
+
+    },
 
     type: 'GoogleVPCUtils'
 };]]></script>
@@ -155,13 +180,13 @@ GoogleVPCUtils.prototype = {
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:41:34</sys_created_on>
         <sys_id>ec658810db23c8901c7b50d3e296193b</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>GoogleVPCUtils</sys_name>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_script_include_ec658810db23c8901c7b50d3e296193b</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-16 03:15:02</sys_updated_on>
+        <sys_updated_on>2020-03-17 08:43:18</sys_updated_on>
     </sys_script_include>
 </record_update>
