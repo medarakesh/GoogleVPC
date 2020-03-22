@@ -52,15 +52,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7b465af8dbab0c901c7b50d3e29619a6</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>Get Firewall</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_7b465af8dbab0c901c7b50d3e29619a6</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 10:48:07</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:22</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -120,10 +120,10 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 05:38:20</sys_created_on>
         <sys_id>1c289e3cdbab0c901c7b50d3e29619fe</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 05:43:56</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:23</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1c289e3cdbab0c901c7b50d3e29619fe"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -384,14 +384,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 05:38:20</sys_created_on>
         <sys_id>e028de3cdbab0c901c7b50d3e2961906</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 05:43:55</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1411,14 +1411,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 05:38:19</sys_created_on>
         <sys_id>98289e3cdbab0c901c7b50d3e29619d3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 05:43:55</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1519,14 +1519,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 05:38:19</sys_created_on>
         <sys_id>dc289e3cdbab0c901c7b50d3e29619cc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 05:38:19</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1603,14 +1603,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 07:22:50</sys_created_on>
         <sys_id>1b00f27c1be7c8101f8cb844cc4bcb15</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 10:32:55</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1686,14 +1686,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 10:26:11</sys_created_on>
         <sys_id>450a133c1babc8101f8cb844cc4bcb96</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 10:32:55</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1769,14 +1769,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 07:22:50</sys_created_on>
         <sys_id>9700f27c1be7c8101f8cb844cc4bcb0d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 10:32:55</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1805,10 +1805,10 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 05:38:20</sys_created_on>
         <sys_id>1c289e3cdbab0c901c7b50d3e29619fe</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 05:43:56</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:23</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1c289e3cdbab0c901c7b50d3e29619fe"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2069,14 +2069,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-12 05:38:20</sys_created_on>
         <sys_id>e028de3cdbab0c901c7b50d3e2961906</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-12 05:43:55</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

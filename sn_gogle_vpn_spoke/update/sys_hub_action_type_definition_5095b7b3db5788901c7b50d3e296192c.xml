@@ -19,14 +19,14 @@
 &lt;br/&gt;
 &lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Virtual Private Network, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Virtual Private Cloud, Status is set to “Error".&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;br/&gt;
 &lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
 &lt;ul&gt;
-&lt;li&gt;Invalid Project ID has been passed.&lt;/li&gt;
+&lt;li&gt;Invalid Project ID.&lt;/li&gt;
 &lt;li&gt;Requested network is doesn't exist.&lt;/li&gt;
 &lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
 &lt;/ul&gt;
@@ -38,7 +38,7 @@
         <ih_action>true</ih_action>
         <internal_name>delete_network</internal_name>
         <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project ID","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛Network","type":"action","ref":""},{"name":"{{step[8e163132-6928-451b-904b-04ddb52cf856].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[8e163132-6928-451b-904b-04ddb52cf856].variable1}}","label":"step➛Pre Processing➛variable1","type":"step","ref":""},{"name":"{{step[8e163132-6928-451b-904b-04ddb52cf856].projectid}}","label":"step➛Pre Processing➛projectid","type":"step","ref":""},{"name":"{{step[8e163132-6928-451b-904b-04ddb52cf856].network}}","label":"step➛Pre Processing➛network","type":"step","ref":""},{"name":"{{step[92e1f426-864c-4af5-a490-0e6572770a90].status_code}}","label":"step➛Delete Network➛Status Code","type":"step","ref":""},{"name":"{{step[92e1f426-864c-4af5-a490-0e6572770a90].response_body}}","label":"step➛Delete Network➛Response Body","type":"step","ref":""},{"name":"{{step[3838710a-4ef9-470f-b0de-3a5ce2a9b380].variable}}","label":"step➛Post Processing➛variable","type":"step","ref":""},{"name":"{{step[3838710a-4ef9-470f-b0de-3a5ce2a9b380].variable1}}","label":"step➛Post Processing➛variable1","type":"step","ref":""},{"name":"{{step[3838710a-4ef9-470f-b0de-3a5ce2a9b380].status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[3838710a-4ef9-470f-b0de-3a5ce2a9b380].error_message}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""},{"name":"{{step[3838710a-4ef9-470f-b0de-3a5ce2a9b380].errormessage}}","label":"step➛Post Processing➛Error Message","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>236bcdd4dbe3c8901c7b50d3e296195b</latest_snapshot>
+        <latest_snapshot>8e3402cc1bb7c4501f8cb844cc4bcb5d</latest_snapshot>
         <master_snapshot>74da4c54db23c8901c7b50d3e29619fb</master_snapshot>
         <name>Delete Network</name>
         <natlang/>
@@ -51,15 +51,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5095b7b3db5788901c7b50d3e296192c</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Delete Network</sys_name>
         <sys_overrides/>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_5095b7b3db5788901c7b50d3e296192c</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 10:46:19</sys_updated_on>
+        <sys_updated_on>2020-03-22 06:31:38</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -107,10 +107,10 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:30</sys_created_on>
         <sys_id>4bc90c14db23c8901c7b50d3e296198d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 06:01:19</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4bc90c14db23c8901c7b50d3e296198d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -397,14 +397,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:30</sys_created_on>
         <sys_id>03c90c14db23c8901c7b50d3e2961995</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 06:01:19</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1342,14 +1342,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:29</sys_created_on>
         <sys_id>72c90c14db23c8901c7b50d3e296194b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 06:03:19</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1369,9 +1369,9 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:29</sys_created_on>
         <sys_id>fac90c14db23c8901c7b50d3e2961951</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 10:46:12</sys_updated_on>
+        <sys_updated_on>2020-03-22 06:31:32</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fac90c14db23c8901c7b50d3e2961951"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1450,14 +1450,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:29</sys_created_on>
         <sys_id>f6c90c14db23c8901c7b50d3e2961944</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 05:59:29</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1534,14 +1534,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:31</sys_created_on>
         <sys_id>13c90c14db23c8901c7b50d3e29619d1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 05:59:31</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1617,14 +1617,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:31</sys_created_on>
         <sys_id>93c90c14db23c8901c7b50d3e29619c8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 05:59:31</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1653,10 +1653,10 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:30</sys_created_on>
         <sys_id>4bc90c14db23c8901c7b50d3e296198d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 06:01:19</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4bc90c14db23c8901c7b50d3e296198d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1943,14 +1943,14 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:59:30</sys_created_on>
         <sys_id>03c90c14db23c8901c7b50d3e2961995</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 06:01:19</sys_updated_on>
+        <sys_updated_on>2020-03-20 11:34:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3081,17 +3081,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Delete Network">5095b7b3db5788901c7b50d3e296192c</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"06dacc54db23c8901c7b50d3e296195a","name":"plan"}}</plan>
-        <snapshot>236bcdd4dbe3c8901c7b50d3e296195b</snapshot>
+        <snapshot>8e3402cc1bb7c4501f8cb844cc4bcb5d</snapshot>
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 06:04:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>06dacc54db23c8901c7b50d3e296195a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 10:46:23</sys_updated_on>
+        <sys_updated_on>2020-03-22 06:31:41</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3112,14 +3112,14 @@
 &lt;br/&gt;
 &lt;p&gt;&lt;b&gt;Outputs:&lt;/p&gt;&lt;/b&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Virtual Private Network, Status is set to “Error".&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Google Virtual Private Cloud, Status is set to “Error".&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;br/&gt;
 &lt;p&gt;&lt;b&gt;Error Messages:&lt;/p&gt;&lt;/b&gt;
 &lt;ul&gt;
-&lt;li&gt;Invalid Project ID has been passed.&lt;/li&gt;
+&lt;li&gt;Invalid Project ID.&lt;/li&gt;
 &lt;li&gt;Requested network is doesn't exist.&lt;/li&gt;
 &lt;li&gt;Invalid authorization header. The access token you're using is either expired or invalid.&lt;/li&gt;
 &lt;/ul&gt;
@@ -3142,15 +3142,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>74da4c54db23c8901c7b50d3e29619fb</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 10:46:18</sys_updated_on>
+        <sys_updated_on>2020-03-22 06:31:37</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4541,9 +4541,9 @@
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 06:04:00</sys_created_on>
         <sys_id>7cda8c54db23c8901c7b50d3e296190d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-10 10:46:18</sys_updated_on>
+        <sys_updated_on>2020-03-22 06:31:37</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7cda8c54db23c8901c7b50d3e296190d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">

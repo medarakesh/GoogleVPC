@@ -43,13 +43,12 @@ GoogleVPCUtils.prototype = {
         var array = [];
         arrayElements.forEach(function(arrayElement) {
             if (arrayElement.trim())
-                array.push(arrayElement);
+                array.push(arrayElement.trim());
         });
         return array;
 
     },
-    createFirewallRule: function(inputs, outputs, direction) {
-        gs.info(JSON.stringify(inputs));
+    createFirewallRule: function(inputs, outputs, direction, operationType) {
         var requestBody = {
             'direction': direction,
             'allowed': [],
@@ -61,65 +60,40 @@ GoogleVPCUtils.prototype = {
             'sourceServiceAccounts': [],
             'targetServiceAccounts': [],
             "logConfig": {
-                "enable": inputs['logconfigenable']
+                "enable": inputs['logconfigenable'] || false
             },
-            "disabled": inputs['disabled']
+            "disabled": inputs['disabled'] || false
         };
         if (inputs.name)
             requestBody["name"] = inputs.name;
+        if (inputs['priority'])
+            requestBody["priority"] = inputs.priority;
+
         if (inputs.description)
             requestBody["description"] = inputs.description;
-
         if (inputs.network)
             requestBody['network'] = "projects/" + inputs.projectid + "/global/networks/" + inputs.network;
-        if (inputs.priority)
-            requestBody['priority'] = inputs.priority;
-        if (inputs.allowed) {
-            var allowed = [];
-
-            inputs.allowed.forEach(function(allowedConfig) {
-                var allowConfigObj = {};
-                if (allowedConfig['IPProtocol']) {
-                    allowConfigObj['IPProtocol'] = allowedConfig['IPProtocol'].trim();
+        if (inputs.firewallrules) {
+            var firewallrules = [];
+            inputs.firewallrules.forEach(function(firewallrulesConfig) {
+                var firewallruleConfigObj = {};
+                if (firewallrulesConfig['IPProtocol']) {
+                    firewallruleConfigObj['IPProtocol'] = firewallrulesConfig['IPProtocol'].trim();
                 }
-                if (allowedConfig['Ports']) {
-                    var collectAllowedPorts = [];
-                    allowedConfig['Ports'].forEach(function(port) {
+                if (firewallrulesConfig['Ports']) {
+                    var collectFWPorts = [];
+                    firewallrulesConfig['Ports'].forEach(function(port) {
                         if (port.trim())
-                            collectAllowedPorts.push(port + '');
+                            collectFWPorts.push(port + '');
                     });
-                    if (collectAllowedPorts.length > 0)
-                        allowConfigObj['ports'] = collectAllowedPorts;
+                    if (collectFWPorts.length > 0)
+                        firewallruleConfigObj['ports'] = collectFWPorts;
                 }
-                if (allowConfigObj['IPProtocol'] && allowConfigObj['ports'].length > 0)
-                    allowed.push(allowConfigObj);
+                if (firewallruleConfigObj['IPProtocol'] && firewallruleConfigObj['ports'].length > 0)
+                    firewallrules.push(firewallruleConfigObj);
             });
-            if (allowed.length > 0)
-                requestBody['allowed'] = allowed;
-
-        }
-        if (inputs.denied) {
-            var denied = [];
-
-            inputs.denied.forEach(function(deniedConfig) {
-                var deniedConfigObj = {};
-                if (deniedConfig['IPProtocol']) {
-                    deniedConfigObj['IPProtocol'] = deniedConfig['IPProtocol'].trim();
-                }
-                if (deniedConfig['Ports']) {
-                    var collectDeniedPorts = [];
-                    deniedConfig['Ports'].forEach(function(port) {
-                        if (port.trim())
-                            collectDeniedPorts.push(port + '');
-                    });
-                    if (collectDeniedPorts.length > 0)
-                        deniedConfigObj['ports'] = collectDeniedPorts;
-                }
-                if (deniedConfigObj['IPProtocol'] && deniedConfigObj['ports'].length > 0)
-                    denied.push(deniedConfigObj);
-            });
-            if (denied.length > 0)
-                requestBody['denied'] = denied;
+            if (firewallrules.length > 0)
+                requestBody[inputs['firewallrulestype']] = firewallrules;
 
         }
         if (inputs['sourceranges'])
@@ -134,44 +108,86 @@ GoogleVPCUtils.prototype = {
             requestBody['destinationRanges'] = this.trimArrayElements(inputs['destinationranges']);
         if (inputs['targetserviceaccounts'])
             requestBody['targetServiceAccounts'] = this.trimArrayElements(inputs['targetserviceaccounts']);
-
+        if (requestBody['allowed'].length < 1 && requestBody['denied'].length < 1 && operationType == 'INSERT')
+            throw new Error('Atleast enter one firewall rules for allowed or denied type.');
         if (requestBody['allowed'].length > 0 && requestBody['denied'].length > 0)
             throw new Error('Should not specify both allowed and denied in the same time.');
-        if (direction == 'INGRESS' && requestBody['destinationRanges'].length > 0)
-            throw new Error('Should not specify destination range for ingress direction.');
-        if (direction == 'EGRESS' && (requestBody['sourceRanges'].length > 0 || requestBody['sourceTags'].length > 0))
-            throw new Error('Should not specify source range or tag for egress direction.');
-        if (inputs['priority'] && (requestBody['priority'] < 0 || requestBody['priority'] > 65535))
-            throw new Error('Invalid priority range value has been passed.');
+        if (direction == 'INGRESS' && operationType == 'INSERT' && (requestBody['sourceRanges'].length < 1 && requestBody['sourceTags'].length < 1 && requestBody['sourceServiceAccounts'].length < 1))
+            throw new Error('Must specify at least one source range , tags or service account.');
+        if (direction == 'EGRESS' && operationType == 'INSERT' && (requestBody['destinationRanges'].length < 1 && requestBody['targetTags'].length < 1 && requestBody['targetServiceAccounts'].length < 1))
+            throw new Error('Must specify at least one target destination , tags or service account.');
         if ((requestBody['sourceServiceAccounts'].length > 0 || requestBody['targetServiceAccounts'].length > 0) && (requestBody['sourceTags'].length > 0 || requestBody['targetTags'].length > 0))
-            throw new Error("ServiceAccounts and Tags are mutually exclusive and can't be combined in the same firewall rule.");
+            throw new Error("ServiceAccounts and Tags should not enter in the same firewall rule.");
 
         outputs.requestbody = JSON.stringify(requestBody);
 
         return outputs.requestbody;
 
     },
-    createIPAdresses: function(inputs, outputs) {
-        var requestBody = {
-            'name': inputs.name.toLowerCase()
-
+    updateFirewallRule: function(inputs, outputs, direction) {
+        var firewallRequestBody = this.createFirewallRule(inputs, outputs, direction, 'UPDATE');
+        firewallRequestBody = JSON.parse(firewallRequestBody);
+        var patchFWRequestBody = {
+            'direction': direction,
+            "logConfig": {
+                "enable": inputs['logconfigenable'] || false
+            },
+            "disabled": inputs['disabled'] || false
         };
-        if (inputs["description"])
-            requestBody["description"] = inputs["description"];
-        if (inputs["addresstype"])
-            requestBody["addressType"] = inputs["addresstype"];
-        if (inputs["networktier"])
-            requestBody["networkTier"] = inputs["networktier"];
-        if (inputs["address"])
-            requestBody["address"] = inputs["address"];
-        if (inputs["network"])
-            requestBody["network"] = inputs["network"];
-        if (inputs["subnetwork"])
-            requestBody["subnetwork"] = inputs["subnetwork"];
+        if (firewallRequestBody['priority'])
+            patchFWRequestBody['priority'] = firewallRequestBody['priority'];
+		if (firewallRequestBody['network'])
+            patchFWRequestBody['network'] = firewallRequestBody['network'];
+        if (firewallRequestBody["allowed"].length > 0)
+            patchFWRequestBody["allowed"] = firewallRequestBody["allowed"];
+        if (firewallRequestBody["denied"].length > 0)
+            patchFWRequestBody["denied"] = firewallRequestBody["denied"];
+        if (firewallRequestBody["sourceTags"].length > 0)
+            patchFWRequestBody["sourceTags"] = firewallRequestBody["sourceTags"];
+        if (firewallRequestBody["targetTags"].length > 0)
+            patchFWRequestBody["targetTags"] = firewallRequestBody["targetTags"];
+        if (firewallRequestBody["sourceRanges"].length > 0)
+            patchFWRequestBody["sourceRanges"] = firewallRequestBody["sourceRanges"];
+        if (firewallRequestBody["destinationRanges"].length > 0)
+            patchFWRequestBody["destinationRanges"] = firewallRequestBody["destinationRanges"];
+        if (firewallRequestBody["sourceServiceAccounts"].length > 0)
+            patchFWRequestBody["sourceServiceAccounts"] = firewallRequestBody["sourceServiceAccounts"];
+        if (firewallRequestBody["targetServiceAccounts"].length > 0)
+            patchFWRequestBody["targetServiceAccounts"] = firewallRequestBody["targetServiceAccounts"];
+            outputs.requestbody = JSON.stringify(patchFWRequestBody);
 
-        outputs.requestbody = JSON.stringify(requestBody);
         return outputs.requestbody;
+    },
 
+    setIAMPolicy: function(inputs, outputs) {
+        var policy = {
+            'policy': {
+                "bindings": []
+            }
+        };
+        inputs["policy"]["bindings"].forEach(function(binding) {
+            var bindingObject = {
+                "role": '',
+                "members": []
+            };
+            if (binding['role'].trim())
+                bindingObject['role'] = binding['role'].trim();
+            if (binding["members"].length > 0) {
+                binding["members"].forEach(function(member) {
+                    if (member.trim())
+                        bindingObject['members'].push(member.trim());
+                });
+            }
+
+            if (bindingObject['role'] && bindingObject['members'].length > 0)
+                policy["policy"]["bindings"].push(bindingObject);
+        });
+
+        if (policy["policy"]["bindings"].length < 1)
+            throw new Error('Role and memebers should not be an empty.');
+
+        outputs.policy = JSON.stringify(policy);
+        return outputs.policy;
     },
 
     type: 'GoogleVPCUtils'
@@ -180,13 +196,13 @@ GoogleVPCUtils.prototype = {
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 05:41:34</sys_created_on>
         <sys_id>ec658810db23c8901c7b50d3e296193b</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>GoogleVPCUtils</sys_name>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_script_include_ec658810db23c8901c7b50d3e296193b</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-17 08:43:18</sys_updated_on>
+        <sys_updated_on>2020-03-20 10:21:16</sys_updated_on>
     </sys_script_include>
 </record_update>

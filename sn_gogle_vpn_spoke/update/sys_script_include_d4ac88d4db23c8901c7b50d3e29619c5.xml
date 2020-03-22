@@ -34,7 +34,7 @@ GoogleVPCErrorHandler.prototype = {
         var errorCode = errorResponse.error.code;
         if (errorCode == 409 && errorMessage.indexOf('already exists') != -1)
             outputs.errormessage = "Requested network name is already created.";
-        else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1)
+        else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1 && errorMessage.indexOf('/subnetworks') != -1)
             outputs.errormessage = "Requested network is doesn't exist.";
         else if (!outputs.errormessage)
             outputs.errormessage = errorMessage;
@@ -55,10 +55,16 @@ GoogleVPCErrorHandler.prototype = {
             outputs.errormessage = "Invalid IP CIDR address range has been passed.";
         else if (errorCode == 400 && errorMessage.indexOf('conflicts with existing subnetwork') != -1)
             outputs.errormessage = "Subnetwork is already existed with same ipcidr range.";
+        else if (errorCode == 400 && errorMessage.indexOf('Extended subnetworks in auto subnet mode networks cannot overlap with') != -1)
+            outputs.errormessage = "Requested ipcidr range is cannot overlap with another subnetwork.";
         else if (errorCode == 400 && errorMessage.indexOf('A VPC Network instead of Legacy Network') != -1)
             outputs.errormessage = "Subnetwork must be created under vpc network instead of legacy network.";
         else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1 && errorMessage.indexOf('global/networks') != -1)
             outputs.errormessage = "Requested network is doesn't exist.";
+        else if (errorCode == 400 && errorMessage.indexOf('The role name must be in the form') != -1)
+            outputs.errormessage = "The role name must be in the form 'roles/{role}','organizations/{organization_id}/roles/{role}' or 'projects/{project_id}/roles/{role}'.";
+        else if (errorCode == 400 && errorMessage.indexOf('Please set a valid type prefix for the member') != -1)
+            outputs.errormessage = "Please set a valid type prefix for the member.";
         else if (!outputs.errormessage)
             outputs.errormessage = errorMessage;
 
@@ -80,10 +86,12 @@ GoogleVPCErrorHandler.prototype = {
             outputs.errormessage = "Invalid port range specification has been passed.";
         else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
             outputs.errormessage = "Service accounts must be valid RFC 822 email addresses.";
-        else if (errorCode == 400 && errorMessage.indexOf('Service accounts must be valid RFC 822 email addresses') != -1)
-            outputs.errormessage = "Service accounts must be valid RFC 822 email addresses.";
+        else if (errorCode == 400 && errorMessage.indexOf('Should not specify both allowed and denied in the same time') != -1)
+            outputs.errormessage = "Should not specify both allowed and denied in the same time.";
         else if (errorCode == 404 && errorMessage.indexOf('was not found') != -1 && errorMessage.indexOf('global/firewalls') != -1)
             outputs.errormessage = "Requested firewall is doesn't exist.";
+		else if (errorCode == 404 && errorMessage.indexOf('Unsupported update operation') != -1)
+            outputs.errormessage = "Update should match with existing firewall rule.";
         else if (!outputs.errormessage)
             outputs.errormessage = errorMessage;
 
@@ -97,13 +105,13 @@ GoogleVPCErrorHandler.prototype = {
         <sys_created_by>praveen</sys_created_by>
         <sys_created_on>2020-03-10 06:13:46</sys_created_on>
         <sys_id>d4ac88d4db23c8901c7b50d3e29619c5</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>GoogleVPCErrorHandler</sys_name>
         <sys_package display_value="Google Virtual Private Network" source="sn_gogle_vpn_spoke">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Google Virtual Private Network">b3dc5f7adbdbc4901c7b50d3e29619c4</sys_scope>
         <sys_update_name>sys_script_include_d4ac88d4db23c8901c7b50d3e29619c5</sys_update_name>
         <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-16 06:49:34</sys_updated_on>
+        <sys_updated_on>2020-03-20 10:42:19</sys_updated_on>
     </sys_script_include>
 </record_update>

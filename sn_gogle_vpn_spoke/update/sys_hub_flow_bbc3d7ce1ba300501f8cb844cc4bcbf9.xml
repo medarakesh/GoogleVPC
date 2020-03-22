@@ -137,20 +137,6 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
         <document_key>f903e7c21b2700501f8cb844cc4bcb6a</document_key>
-        <order>3</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-16 08:17:58</sys_created_on>
-        <sys_id>b503e7c21b2700501f8cb844cc4bcb70</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-16 08:17:58</sys_updated_on>
-        <value>tetsingfetch</value>
-        <variable display_value="">99d82a0e1befcc101f8cb844cc4bcb9d</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>f903e7c21b2700501f8cb844cc4bcb6a</document_key>
         <order>9</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>praveen</sys_created_by>
@@ -293,20 +279,6 @@
         <sys_updated_on>2020-03-16 08:17:58</sys_updated_on>
         <value>testnetwork</value>
         <variable display_value="">59d82a0e1befcc101f8cb844cc4bcba3</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>f903e7c21b2700501f8cb844cc4bcb6a</document_key>
-        <order>3</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>praveen</sys_created_by>
-        <sys_created_on>2020-03-16 08:17:58</sys_created_on>
-        <sys_id>b503e7c21b2700501f8cb844cc4bcb70</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>praveen</sys_updated_by>
-        <sys_updated_on>2020-03-16 08:17:58</sys_updated_on>
-        <value>tetsingfetch</value>
-        <variable display_value="">99d82a0e1befcc101f8cb844cc4bcb9d</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
